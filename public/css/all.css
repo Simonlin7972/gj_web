@@ -1,4 +1,7 @@
 .gj-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   background-color: white !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -88,9 +91,9 @@
 body {
   background-color: rgba(0, 0, 0, 0.02); }
 
-.padding-board-120 {
-  padding-top: 120px;
-  padding-bottom: 120px; }
+.padding-board-160 {
+  padding-top: 160px;
+  padding-bottom: 160px; }
 
 .padding-board-48 {
   padding-top: 48px;
@@ -98,7 +101,7 @@ body {
 
 .main-section .section-1-people {
   position: relative;
-  top: -72px;
+  top: 0;
   z-index: -1; }
   .main-section .section-1-people .boss-man {
     width: 202px;
@@ -137,6 +140,7 @@ body {
       width: 90%; }
 
 .main-section .section-1-content {
+  margin-top: 80px;
   position: relative;
   z-index: 5; }
 
