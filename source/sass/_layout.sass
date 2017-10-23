@@ -1,8 +1,11 @@
 body
   background-color: $bg-color
-.padding-board
+.padding-board-120
   padding-top: 120px
   padding-bottom: 120px
+.padding-board-48
+  padding-top: 48px
+  padding-bottom: 48px
 
 .main-section
   .section-1-people
@@ -54,11 +57,14 @@ body
       width: 200px
       height: 60px
       margin-left: 16px
-      margin-top: 64px
+      margin-top: 48px
+      transition: all .3s
       img
         width: 100%
         box-shadow: 0 6px 16px  rgba(0,0,0,0.15)
         border-radius: 28px
+      &:hover
+        transform: translateY(-5px)
   .arrow-indicator
     position: absolute
     bottom: 90px

@@ -7,14 +7,26 @@
     font-weight: bold
     color: $primary-color !important
     border-radius: 3px
-    transition: all .2s
+    transition: all .3s
     letter-spacing: .5px
     border: 1px solid transparent
-    &:hover
-      background-color: $primary-color
+    &:after
+      content: ''
+      display: block
+      height: 4px
+      width: 20%
+      position: relative
+      top: 25px
+      border-radius: 20px
+      background-color: white
+      transition: all .2s
+    &:hover:after
+      width: 100%
+      background-color: $green
+      // background-color: $primary-color
       // background-color: rgba(0,0,0,.05)
       // border: 1px solid $primary-color
-      color: white !important
+      // color: white !important
 
 .main-section
   h1
@@ -27,6 +39,7 @@
     text-shadow: 0 4px 20px  rgba(0,0,0,0.05)
   h2
     text-align: right
+    font-weight: 400
     font-size: 32px
     color: $primary-color
     text-shadow: 0 4px 20px  rgba(0,0,0,0.05)
