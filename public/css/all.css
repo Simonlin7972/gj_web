@@ -30,6 +30,21 @@
       margin-bottom: 0;
       font-weight: bold;
       color: #084887; }
+  .gj-nav li {
+    margin-right: 4px; }
+  .gj-nav a {
+    font-weight: bold;
+    color: #084887 !important;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    letter-spacing: .5px;
+    border: 1px solid transparent; }
+    .gj-nav a:hover {
+      width: 100%;
+      background-color: #084887;
+      color: white !important; }
 
 @media (max-width: 768px) {
   button {
@@ -43,34 +58,6 @@
 
 * {
   font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI","Roboto","Ubuntu","Droid Sans","Ariel","Helvetica Neue","sans-serif"; }
-
-.gj-nav li {
-  margin-right: 4px; }
-
-.gj-nav a {
-  font-weight: bold;
-  color: #084887 !important;
-  border-radius: 3px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  letter-spacing: .5px;
-  border: 1px solid transparent; }
-  .gj-nav a:after {
-    content: '';
-    display: block;
-    height: 4px;
-    width: 20%;
-    position: relative;
-    top: 25px;
-    border-radius: 20px;
-    background-color: white;
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s; }
-  .gj-nav a:hover:after {
-    width: 100%;
-    background-color: #00a6a6; }
 
 .main-section h1 {
   text-align: right;
@@ -87,6 +74,35 @@
   font-size: 32px;
   color: #084887;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+
+.section-2 {
+  height: 800px; }
+  .section-2 .find-job-title h3, .section-2 .find-helper-title h3 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.15); }
+  .section-2 .find-job-title a, .section-2 .find-helper-title a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: #084887;
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .section-2 .find-job-title a:hover, .section-2 .find-helper-title a:hover {
+      background-color: #042e67; }
+    .section-2 .find-job-title a p, .section-2 .find-helper-title a p {
+      font-size: 16px;
+      color: white;
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 8px; }
+    .section-2 .find-job-title a i, .section-2 .find-helper-title a i {
+      color: white;
+      font-size: 20px; }
 
 body {
   background-color: rgba(0, 0, 0, 0.02); }
@@ -167,13 +183,63 @@ body {
     .main-section .cta-wrap .cta-box:hover {
       -webkit-transform: translateY(-5px);
           -ms-transform: translateY(-5px);
-              transform: translateY(-5px); }
+              transform: translateY(-5px);
+      opacity: .8; }
 
 .main-section .arrow-indicator {
   position: absolute;
-  bottom: 90px;
+  bottom: 50px;
   right: 0;
   left: 0; }
+
+.section-2 .find-job-wrap {
+  position: relative; }
+  .section-2 .find-job-wrap .find-job-title {
+    position: absolute;
+    top: 40px;
+    left: 148px;
+    z-index: 3; }
+  .section-2 .find-job-wrap .student {
+    position: absolute;
+    top: 135px;
+    left: 83px;
+    width: 470px;
+    height: 461px;
+    z-index: 2; }
+    .section-2 .find-job-wrap .student img {
+      width: 100%; }
+  .section-2 .find-job-wrap .yellow-shape {
+    position: absolute;
+    top: 0;
+    width: 684px;
+    height: 596px;
+    z-index: 1; }
+    .section-2 .find-job-wrap .yellow-shape img {
+      width: 100%; }
+
+.section-2 .find-helper-wrap {
+  position: relative; }
+  .section-2 .find-helper-wrap .find-helper-title {
+    position: absolute;
+    top: 190px;
+    left: 190px;
+    z-index: 3; }
+  .section-2 .find-helper-wrap .boss-two {
+    position: absolute;
+    top: 320px;
+    left: 83px;
+    width: 299px;
+    height: 276px;
+    z-index: 2; }
+    .section-2 .find-helper-wrap .boss-two img {
+      width: 100%; }
+  .section-2 .find-helper-wrap .green-shpae {
+    position: absolute;
+    width: 684px;
+    height: 596px;
+    z-index: 1; }
+    .section-2 .find-helper-wrap .green-shpae img {
+      width: 100%; }
 
 .arrow-indicator {
   text-align: center;
