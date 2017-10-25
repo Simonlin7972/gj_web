@@ -111,9 +111,9 @@
     width: 100%; }
 
 .apply-section .apply-content-warp h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: #ff9519;
-  line-height: 40px; }
+  line-height: 48px; }
 
 .apply-section .apply-content-warp p {
   font-size: 20px;
@@ -129,11 +129,29 @@
     width: 100%; }
 
 .review-section .review-content-warp h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: #084887;
-  line-height: 40px; }
+  line-height: 48px; }
 
 .review-section .review-content-warp p {
+  font-size: 20px;
+  margin-bottom: 0;
+  line-height: 32px;
+  font-weight: 500;
+  color: #444; }
+
+.security-section .security-content-warp .apply-icon {
+  height: 60px;
+  width: 60px; }
+  .security-section .security-content-warp .apply-icon img {
+    width: 100%; }
+
+.security-section .security-content-warp h3 {
+  font-size: 40px;
+  color: #00a6a6;
+  line-height: 48px; }
+
+.security-section .security-content-warp p {
   font-size: 20px;
   margin-bottom: 0;
   line-height: 32px;
@@ -315,29 +333,63 @@ body {
   z-index: 1; }
   .review-section .review-image-wrap .text-rating {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 319px;
+    height: 147px;
     z-index: 3;
-    top: 60px;
-    right: 280px; }
+    top: 140px;
+    left: 150px; }
     .review-section .review-image-wrap .text-rating img {
       width: 100%; }
   .review-section .review-image-wrap .people-phone {
     position: absolute;
-    width: 359px;
-    height: 507px;
+    width: 419px;
+    height: 299px;
     z-index: 2;
-    top: -107px;
-    left: 80px; }
+    top: 237px;
+    left: 89px; }
     .review-section .review-image-wrap .people-phone img {
       width: 100%; }
   .review-section .review-image-wrap .yellow-shape-two {
     position: absolute;
     width: 805px;
     height: 400px;
-    z-index: 1; }
+    z-index: 1;
+    bottom: -380px; }
     .review-section .review-image-wrap .yellow-shape-two img {
       width: 100%; }
+
+.security-section {
+  margin-top: 300px; }
+  .security-section .security-image-wrap {
+    position: relative;
+    z-index: 1; }
+    .security-section .security-image-wrap .iphone-screen {
+      position: absolute;
+      width: 252px;
+      height: 487px;
+      z-index: 2;
+      top: -50px;
+      right: 200px; }
+      .security-section .security-image-wrap .iphone-screen img {
+        width: 100%; }
+    .security-section .security-image-wrap .icon-secure {
+      position: absolute;
+      width: 204px;
+      height: 148px;
+      z-index: 3;
+      top: 150px;
+      right: 80px; }
+      .security-section .security-image-wrap .icon-secure img {
+        width: 100%; }
+    .security-section .security-image-wrap .green-shpae-two {
+      position: absolute;
+      width: 666px;
+      height: 737px;
+      right: 50px;
+      z-index: 1;
+      bottom: -380px; }
+      .security-section .security-image-wrap .green-shpae-two img {
+        width: 100%; }
 
 @media (max-width: 992px) {
   .section-2 .find-helper-wrap {
