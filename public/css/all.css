@@ -95,6 +95,12 @@ footer {
   list-style-type: decimal; }
   .policy-section ul li ul li {
     list-style-type: lower-alpha; }
+    .policy-section ul li ul li ul li {
+      list-style-type: disc; }
+
+@media (max-width: 576px) {
+  .policy-section h1 {
+    font-size: 32px; } }
 
 nav .active-menu {
   background-color: #084887;
@@ -126,7 +132,7 @@ nav .active-menu {
     text-align: center; }
     .about-section .contact-us a {
       display: inline-block;
-      padding: 12px 20px;
+      padding: 8px 20px;
       border-radius: 30px;
       background-color: #084887;
       -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
