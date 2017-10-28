@@ -267,9 +267,9 @@ body {
               transform: translateY(-5px);
       opacity: .8; }
 
-.main-section .arrow-indicator {
+.arrow-indicator {
   position: absolute;
-  bottom: 50px;
+  top: 700px;
   right: 0;
   left: 0; }
 
@@ -535,6 +535,9 @@ body {
         .main-section .section-1-people .bg-orange img {
           width: 53%; } }
 
+.logo a:hover {
+  background-color: white; }
+
 .arrow-indicator {
   text-align: center;
   -webkit-animation: scroll-arrow 1.5s ease both infinite;
@@ -601,3 +604,14 @@ footer {
       color: rgba(255, 255, 255, 0.8);
       font-weight: 400;
       font-size: 14px; }
+
+.policy-section h1 {
+  padding-top: 72px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #084887; }
+
+.policy-section ul li {
+  list-style-type: decimal; }
+  .policy-section ul li ul li {
+    list-style-type: lower-alpha; }
