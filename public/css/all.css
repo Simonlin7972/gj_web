@@ -85,6 +85,24 @@ footer {
       font-weight: 400;
       font-size: 14px; }
 
+@media (max-width: 768px) {
+  footer ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  footer p {
+    text-align: center; } }
+
+@media (max-width: 432px) {
+  footer ul {
+    display: block;
+    text-align: center; }
+    footer ul li {
+      width: 100%;
+      margin-bottom: 8px; }
+      footer ul li a {
+        font-size: 16px; } }
+
 .policy-section h1 {
   padding-top: 72px;
   padding-bottom: 40px;
@@ -617,6 +635,43 @@ body {
         top: 0; }
         .main-section .section-1-people .bg-orange img {
           width: 53%; } }
+
+.btn-go-top {
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  background-color: white;
+  -webkit-box-shadow: 1px 4px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  color: #084887;
+  position: fixed;
+  font-weight: bold;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+  text-align: center;
+  line-height: 48px;
+  opacity: 0; }
+  .btn-go-top:hover {
+    opacity: 1;
+    text-decoration: none; }
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 0.7;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .cd-top.cd-fade-out:hover {
+    opacity: 1; }
 
 .logo a:hover {
   background-color: white; }

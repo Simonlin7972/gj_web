@@ -1,3 +1,35 @@
+.btn-go-top
+  width: 48px
+  height: 48px
+  font-size: 20px
+  background-color: white
+  box-shadow: 1px 4px 16px  rgba(0,0,0,0.15)
+  border-radius: 30px
+  color: $primary-color
+  position: fixed
+  font-weight: bold
+  right: 24px
+  bottom: 24px
+  z-index: 999
+  text-align: center
+  line-height: 48px
+  // font-weight: bold
+  // transition: all .3s
+  opacity: 0
+  &:hover
+    opacity: 1
+    text-decoration: none
+.cd-top.cd-is-visible
+  /* the button becomes visible */
+  transition: all .3s
+  opacity: 1
+
+.cd-top.cd-fade-out
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 0.7
+  transition: all .3s
+  &:hover
+    opacity: 1
 
 .logo
   a:hover

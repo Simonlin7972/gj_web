@@ -22,3 +22,22 @@ footer
       color: rgba(255,255,255,0.8)
       font-weight: 400
       font-size: 14px
+
+@media (max-width: 768px)
+  footer
+    ul
+      li
+        flex: 1
+    p
+      text-align: center
+
+@media (max-width: 432px)
+  footer
+    ul
+      display: block
+      text-align: center
+      li
+        width: 100%
+        margin-bottom: 8px
+        a
+          font-size: 16px
