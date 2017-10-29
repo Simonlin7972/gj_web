@@ -12,20 +12,116 @@
   <script src="https://use.fontawesome.com/44f3ceebf4.js"></script>
 
 
-<link rel="stylesheet" href="./public/css/jquery-ui.css">
-<script type="text/javascript" src="./source/js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="./public/css/jquery-ui.css">
+  <script type="text/javascript" src="./source/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="./source/js/all.js"></script>
 
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
+
+<script type="text/javascript">
+	$(function(){
+		// 幫 #qaContent 的 ul 子元素加上 .accordionPart
+		// 接著再找出 li 中的第一個 div 子元素加上 .qa_title
+		// 並幫其加上 hover 及 click 事件
+		// 同時把兄弟元素加上 .qa_content 並隱藏起來
+		$('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function(){
+			$(this).addClass('qa_title_on');
+		}, function(){
+			$(this).removeClass('qa_title_on');
+		}).click(function(){
+			// 當點到標題時，若答案是隱藏時則顯示它，同時隱藏其它已經展開的項目
+			// 反之則隱藏
+			var $qa_content = $(this).next('div.qa_content');
+			if(!$qa_content.is(':visible')){
+				$('#qaContent ul li div.qa_content:visible').slideUp();
+			}
+			$qa_content.slideToggle();
+		}).siblings().addClass('qa_content').hide();
+	});
+</script>
+
+<script type="text/javascript">
   $( function() {
-    $( "#accordion" ).accordion();
     $( "#tabs" ).tabs();
   } );
-  </script>
+</script>
 
+<style type="text/css">
+.subtitle{
+	    display: inline-flex;
+}
+.block1 {
+	width: 10px;
+	height: 38px;
+	background-color: #ff8519;
+}
+
+.block2 {
+  width: 10px;
+  height: 38px;
+  background-color: #0999a8;
+}
+.block3 {
+  width: 10px;
+  height: 38px;
+  background-color: #084887;
+}
+.block4 {
+  width: 10px;
+  height: 38px;
+  background-color: #f5af40;
+}
+.faq-section .faq-tab-wrap .faq-tab a{
+  color: #fff;
+}
+
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#qaContent {
+	width: 700px;
+}
+#qaContent h3 {
+	width: 500px;
+	height: 22px;
+	text-indent: -9999px;
+}
+#qaContent .subtitle h2 {
+	color: #000;
+}
+
+#qaContent ul.accordionPart {
+	margin: 10px 10px 50px 30px;
+}
+#qaContent ul.accordionPart li {
+	border-bottom: solid 1px #e3e3e3;
+	padding-bottom: 12px;
+	margin-top: 12px;
+}
+#qaContent ul.accordionPart li .qa_title {
+	background: url(icon_q_a.gif) no-repeat 0px 3px;
+	padding-left: 28px;
+	color: #1186ec;
+	cursor: pointer;
+}
+#qaContent ul.accordionPart li .qa_title_on {
+	text-decoration: underline;
+}
+#qaContent ul.accordionPart li .qa_content {
+	margin: 6px 0 0;
+	background: url(icon_q_a.gif) no-repeat 0px -24px;
+	padding-left: 28px;
+	color: #666;
+}
+
+
+
+</style>
 
 </head>
 
@@ -69,95 +165,364 @@
     </div>
   </nav>
 
-  <div class="faq-section padding-board-48">
-    <div class="container">
+<div class="faq-section padding-board-48">
+   <div class="container" id="tabs">
       <div class="row">
-        <div class="col-md-12">
-          <h1>常見問題</h1>
+         <div class="col-md-12">
+            <h1>常見問題</h1>
+            <div class="faq-tab-wrap">
+               <div class="row">
+                  <ul>
+                     <li class="col-md-3">
+                        <a class="faq-tab" href="#tabs-1">
+                           <p>新手上路</p>
+                        </a>
+                     </li>
+                     <li class="col-md-3">
+                        <a class="faq-tab" href="#tabs-2">
+                           <p>會員帳號</p>
+                        </a>
+                     </li>
+                     <li class="col-md-3">
+                        <a class="faq-tab" href="#tabs-3">
+                           <p>付費交易</p>
+                        </a>
+                     </li>
+                     <li class="col-md-3">
+                        <a class="faq-tab" href="#tabs-4">
+                           <p>薪資管理</p>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div id="qaContent">
+                  <div class="sec01" id="tabs-1">
+                     <div class="subtitle">
+                        <div class="block1"></div>
+                        <h4>發佈/應徵</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何發佈任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何應徵任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block1"></div>
+                        <h4>簽到/簽退</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何幫小夥伴簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何辦理任務簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block1"></div>
+                        <h4>遲到</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>來不及幫小夥伴們簽到怎麼辦？(發案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>上班要遲到了怎麼辦？(接案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="sec02" id="tabs-2">
+                     <div class="subtitle">
+                        <div class="block2"></div>
+                        <h4>發佈/應徵2</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何發佈任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何應徵任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block2"></div>
+                        <h4>簽到/簽退2</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何幫小夥伴簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何辦理任務簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block2"></div>
+                        <h4>遲到2</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>來不及幫小夥伴們簽到怎麼辦？(發案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>上班要遲到了怎麼辦？(接案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="sec03" id="tabs-3">
+                     <div class="subtitle">
+                        <div class="block3"></div>
+                        <h4>發佈/應徵3</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何發佈任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何應徵任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block3"></div>
+                        <h4>簽到/簽退3</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何幫小夥伴簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何辦理任務簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block3"></div>
+                        <h4>遲到3</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>來不及幫小夥伴們簽到怎麼辦？(發案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>上班要遲到了怎麼辦？(接案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="sec04" id="tabs-4">
+                     <div class="subtitle">
+                        <div class="block4"></div>
+                        <h4>發佈/應徵4</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何發佈任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何應徵任務？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block4"></div>
+                        <h4>簽到/簽退4</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>如何幫小夥伴簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>如何辦理任務簽到？</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="subtitle">
+                        <div class="block4"></div>
+                        <h4>遲到4</h4>
+                     </div>
+                     <ul>
+                        <li>
+                           <div>來不及幫小夥伴們簽到怎麼辦？(發案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                        <li>
+                           <div>上班要遲到了怎麼辦？(接案方)</div>
+                           <div>
+                              一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br/>
+                              Step1 點擊控制列【發布任務】進入發布任務列表頁<br/>
+                              Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br/>
+                              Step3 填寫任務內容與需求<br/>
+                              Step4 按下【確認發布】即可完成發布任務<br/>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
 
-          <div class="row">
-          <div class="col-md-3">
-            <a class="faq-tab" href="#">
-            <img src="" alt="">
-            <p>新手上路</p>
-            </a>
-          </div>
-          <div class="col-md-3">
-              <a class="faq-tab" href="#">
-            <img src="" alt="">
-            <p>會員帳號</p>
-            </a>
-          </div>
-          <div class="col-md-3">
-              <a class="faq-tab" href="#">
-            <img src="" alt="">
-            <p>付費交易</p>
-            </a>
-          </div>
-          <div class="col-md-3">
-              <a class="faq-tab" href="#">
-            <img src="" alt="">
-            <p>薪資管理</p>
-            </a>
-          </div>
-</div>
-
-          <div id="accordion">
-            <h3>如何發佈任務</h3>
-            <div>
-              <p>
-                一分鐘立刻發佈任務，快速找到小夥伴，讓你立刻開工！<br>
-
-  Step1 點擊控制列【發布任務】進入發布任務列表頁<br>
-  Step2 進入後，點擊畫面右下方按鈕發布【新任務】<br>
-  Step3 填寫任務內容與需求<br>
-  Step4 按下【確認發布】即可完成發布任務
-              </p>
+               </div>
             </div>
-            <h3>Section 2</h3>
-            <div>
-              <p>
-              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-              suscipit faucibus urna.
-              </p>
-            </div>
-            <h3>Section 3</h3>
-            <div>
-              <p>
-              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-              </p>
-              <ul>
-                <li>List item one</li>
-                <li>List item two</li>
-                <li>List item three</li>
-              </ul>
-            </div>
-            <h3>Section 4</h3>
-            <div>
-              <p>
-              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-              mauris vel est.
-              </p>
-              <p>
-              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.
-              </p>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-  </div>
-
-
+   </div>
+</div>
 
   <!-- footer start -->
   <footer class="padding-board-48">
@@ -185,4 +550,5 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
