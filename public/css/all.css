@@ -718,10 +718,22 @@ body {
         margin: 0 auto; }
       .review-section .review-content-warp h3 {
         font-size: 32px; }
-    .review-section .review-image-wrap .yellow-shape-two {
-      top: 100px; }
-      .review-section .review-image-wrap .yellow-shape-two img {
-        width: 50%; } }
+    .review-section .review-image-wrap {
+      margin-top: -60px; }
+      .review-section .review-image-wrap .yellow-shape-two {
+        top: 100px; }
+        .review-section .review-image-wrap .yellow-shape-two img {
+          width: 50%; }
+      .review-section .review-image-wrap .people-phone {
+        top: 169px;
+        left: 28px; }
+        .review-section .review-image-wrap .people-phone img {
+          width: 70%; }
+      .review-section .review-image-wrap .text-rating {
+        top: 100px;
+        left: 100px; }
+        .review-section .review-image-wrap .text-rating img {
+          width: 80%; } }
 
 .btn-go-top {
   width: 48px;
