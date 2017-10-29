@@ -735,6 +735,19 @@ body {
         .review-section .review-image-wrap .text-rating img {
           width: 80%; } }
 
+.security-section .security-image-wrap .green-shpae-two {
+  right: 0;
+  left: 0;
+  bottom: -580px; }
+  .security-section .security-image-wrap .green-shpae-two img {
+    width: 60%; }
+
+.security-section .security-image-wrap .iphone-screen {
+  top: -150px;
+  left: 200px; }
+  .security-section .security-image-wrap .iphone-screen img {
+    width: 80%; }
+
 .btn-go-top {
   width: 48px;
   height: 48px;
