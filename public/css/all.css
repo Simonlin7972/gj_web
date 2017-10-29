@@ -310,7 +310,10 @@ footer {
   .main-section h2 {
     text-align: center;
     font-size: 28px;
-    font-weight: 500; } }
+    font-weight: 500; }
+  .section-2 .find-job-wrap .find-job-title h3 {
+    font-size: 24px;
+    margin-bottom: 12px; } }
 
 body {
   background-color: rgba(0, 0, 0, 0.02); }
@@ -631,10 +634,12 @@ body {
       display: block;
       margin-top: 280px; }
       .main-section .cta-wrap .cta-box {
+        width: 240px;
+        height: 72px;
         margin: 0 auto;
         margin-top: 24px; }
         .main-section .cta-wrap .cta-box img {
-          width: 120%;
+          width: 100%;
           -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
                   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
           border-radius: 28px; }
@@ -653,14 +658,70 @@ body {
           width: 80%; }
       .main-section .section-1-people .people {
         position: absolute;
-        left: 60px;
-        top: -43px; }
+        left: 63px;
+        top: 0px; }
         .main-section .section-1-people .people img {
-          width: 60%; }
+          width: 50%; }
       .main-section .section-1-people .bg-orange {
         top: 0; }
         .main-section .section-1-people .bg-orange img {
-          width: 53%; } }
+          width: 53%; }
+  .section-2 {
+    padding-top: 120px; }
+    .section-2 .find-job-wrap .yellow-shape img {
+      width: 64%; }
+    .section-2 .find-job-wrap .student {
+      top: 124px;
+      left: 78px; }
+      .section-2 .find-job-wrap .student img {
+        width: 53%; }
+    .section-2 .find-job-wrap .find-job-title {
+      left: 56px; }
+    .section-2 .find-helper-wrap {
+      margin-top: 400px; }
+      .section-2 .find-helper-wrap .find-helper-title {
+        top: 170px;
+        left: 100px; }
+        .section-2 .find-helper-wrap .find-helper-title h3 {
+          font-size: 24px;
+          margin-bottom: 12px; }
+      .section-2 .find-helper-wrap .green-shpae img {
+        width: 80%; }
+      .section-2 .find-helper-wrap .boss-two {
+        top: 255px;
+        left: 64px; }
+        .section-2 .find-helper-wrap .boss-two img {
+          width: 80%; }
+  .apply-section {
+    margin-top: 72px; }
+    .apply-section .apply-content-warp {
+      text-align: center; }
+      .apply-section .apply-content-warp .apply-icon {
+        margin: 0 auto; }
+      .apply-section .apply-content-warp h3 {
+        font-size: 32px; }
+    .apply-section .apply-image-wrap .timer {
+      top: 520px;
+      left: 32px; }
+    .apply-section .apply-image-wrap .orang-shape {
+      top: 261px; }
+    .apply-section .apply-image-wrap .businessman {
+      top: 306px;
+      left: 80px; }
+      .apply-section .apply-image-wrap .businessman img {
+        width: 70%; }
+  .review-section {
+    margin-top: 200px; }
+    .review-section .review-content-warp {
+      text-align: center; }
+      .review-section .review-content-warp .apply-icon {
+        margin: 0 auto; }
+      .review-section .review-content-warp h3 {
+        font-size: 32px; }
+    .review-section .review-image-wrap .yellow-shape-two {
+      top: 100px; }
+      .review-section .review-image-wrap .yellow-shape-two img {
+        width: 50%; } }
 
 .btn-go-top {
   width: 48px;
