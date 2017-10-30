@@ -733,20 +733,58 @@ body {
         top: 100px;
         left: 100px; }
         .review-section .review-image-wrap .text-rating img {
-          width: 80%; } }
-
-.security-section .security-image-wrap .green-shpae-two {
-  right: 0;
-  left: 0;
-  bottom: -580px; }
-  .security-section .security-image-wrap .green-shpae-two img {
-    width: 60%; }
-
-.security-section .security-image-wrap .iphone-screen {
-  top: -150px;
-  left: 200px; }
-  .security-section .security-image-wrap .iphone-screen img {
-    width: 80%; }
+          width: 80%; }
+  .security-section .security-image-wrap .green-shpae-two {
+    height: 300px;
+    right: 0;
+    left: 0;
+    bottom: -580px;
+    top: 60px; }
+    .security-section .security-image-wrap .green-shpae-two img {
+      width: 60%; }
+  .security-section .security-image-wrap .iphone-screen {
+    top: 50px;
+    left: 120px; }
+    .security-section .security-image-wrap .iphone-screen img {
+      width: 80%; }
+  .security-section .security-image-wrap .icon-secure {
+    top: 240px;
+    right: -50px; }
+    .security-section .security-image-wrap .icon-secure img {
+      width: 80%; }
+  .security-section .security-content-warp {
+    text-align: center;
+    margin: -200px; }
+    .security-section .security-content-warp .apply-icon {
+      margin: 0 auto; }
+  .download-section {
+    margin-top: 240px;
+    padding-bottom: 24px; }
+    .download-section .download-contnet-wrap {
+      padding-right: 0;
+      text-align: center; }
+      .download-section .download-contnet-wrap h3 {
+        font-size: 24px;
+        text-align: center; }
+      .download-section .download-contnet-wrap h4 {
+        text-align: center; }
+    .download-section .cta-wrap {
+      padding-right: 0;
+      display: block;
+      margin: 0 auto; }
+      .download-section .cta-wrap .cta-box {
+        margin: 0 auto;
+        margin-top: 24px; }
+  .qr-section {
+    margin-top: 300px; }
+    .qr-section .iphone-logo {
+      margin: 0 auto;
+      right: 0;
+      left: 0; }
+      .qr-section .iphone-logo img {
+        width: 110%; }
+    .qr-section .qr-img {
+      display: none; } }
 
 .btn-go-top {
   width: 48px;
