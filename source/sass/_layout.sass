@@ -1,6 +1,14 @@
 body
   background-color: $bg-color
 
+.fadeInBlock
+    opacity: 0
+    transform: translateY(80px)
+    transition: all 0.8s
+.push-up
+  transform: translateY(0)
+  opacity: 1
+
 .padding-board-160
   padding-top: 160px
   padding-bottom: 160px
@@ -21,6 +29,8 @@ body
       top: 105px
       right: 90px
       z-index: 4
+      animation: fade-up .5s ease both
+      animation-delay: .8s
       img
         width: 100%
     .boss-women
@@ -30,6 +40,8 @@ body
       top: 171px
       right: -28px
       z-index: 3
+      animation: fade-up .5s ease both
+      animation-delay: .6s
       img
         width: 100%
     .people
@@ -39,6 +51,8 @@ body
       left: 130px
       top: 6px
       z-index: 2
+      animation: fade-up .5s ease both
+      animation-delay: .5s
       img
         width: 90%
     .bg-orange
@@ -47,6 +61,8 @@ body
       position: absolute
       top: 0
       z-index: 1
+      animation: fade-up 1s ease both
+      animation-delay: .3s
       img
         width: 90%
   .section-1-content
@@ -287,6 +303,18 @@ body
     width: 110px
     img
       width: 100%
+// animation
+
+
+@keyframes fade-up
+  0%
+    opacity: 0
+    transform: translateY(15px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+
 
 
 // RWD setting
