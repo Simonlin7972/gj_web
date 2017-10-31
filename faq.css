@@ -1,0 +1,152 @@
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+svg {
+    width: 50px;
+    height: 50px;
+    fill: currentColor;
+    vertical-align: bottom;
+}
+#qaContent {
+    width: 100%;
+}
+#qaContent h3 {
+    width: 500px;
+    height: 22px;
+    text-indent: -9999px;
+}
+#qaContent .subtitle h2 {
+    color: #000;
+}
+#qaContent ul.accordionPart {
+    margin: 10px 10px 50px 30px;
+}
+#qaContent ul.accordionPart li {
+    margin-top: 14px;
+}
+#qaContent ul.accordionPart li .qa_title {
+    padding-left: 28px;
+    color: #000;
+    cursor: pointer;
+    background: bisque;
+    border-radius: 4px;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#qaContent ul.accordionPart li .qa_title_on {
+    text-decoration: underline;
+}
+#qaContent ul.accordionPart li .qa_content {
+    margin: 6px 0 0;
+    padding-left: 28px;
+    color: #666;
+}
+#qaContent svg {
+    width: 16px;
+    height: 26px;
+}
+.center {
+    margin-bottom: 62px;
+    text-align: center;
+}
+.subtitle {
+    display: inline-flex;
+}
+.topspace {
+    margin-top: 6px;
+}
+.block1 {
+    width: 10px;
+    height: 30px;
+    background-color: #ff8519;
+    margin-right: 10px;
+}
+.block2 {
+    width: 10px;
+    height: 30px;
+    background-color: #0999a8;
+    margin-right: 10px;
+}
+.block3 {
+    width: 10px;
+    height: 30px;
+    background-color: #0c6ecd;
+    margin-right: 10px;
+}
+.block4 {
+    width: 10px;
+    height: 30px;
+    background-color: #f5af40;
+    margin-right: 10px;
+}
+.faq-tab-wrap .nav a {
+    color: #084887;
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    height: 110px;
+    vertical-align: middle;
+    padding-top: 15px;
+}
+.selectedTab {
+    background-color: #fafafa;
+    border: none;
+    color: #084887;
+    line-height: 0.5em;
+    padding: 8px 10px;
+}
+.notSelectedTab {
+    border: none;
+    border-bottom: none;
+    background-color: #fafafa;
+    color: #084887;
+    line-height: 0.5em;
+    margin-top: -1px;
+    padding: 8px 10px;
+}
+.notSelectedTab:hover {
+    background-color: #f3f3f3;
+    color: #084887;
+}
+.transformer-tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.transformer-tabs li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    border-bottom-width: 0;
+    padding: 0;
+    white-space: nowrap;
+    color: #084887;
+}
+.transformer-tabs li:nth-child(1) .selectedTab {
+    color: #fff;
+    background-color: #ff8519;
+}
+.transformer-tabs li:nth-child(2) .selectedTab {
+    color: #fff;
+    background-color: #0999a8;
+}
+.transformer-tabs li:nth-child(3) .selectedTab {
+    color: #fff;
+    background-color: #0c6ecd;
+}
+.transformer-tabs li:nth-child(4) .selectedTab {
+    color: #fff;
+    background-color: #f5af40;
+}
+.transformer-tabs a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
