@@ -333,6 +333,18 @@ body {
           transform: translateY(0);
   opacity: 1; }
 
+.fadeInDelay {
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
+
+.push-up-delay {
+  -webkit-animation: fade-up .6s ease both;
+          animation: fade-up .6s ease both;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s; }
+
 .padding-board-160 {
   padding-top: 160px;
   padding-bottom: 160px; }
