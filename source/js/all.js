@@ -17,6 +17,16 @@ jQuery(document).ready(function($){
 		}
 	});
 
+// slider
+  $('#btn-know-more').click(function(event) {
+    event.preventDefault();
+        $('.full-bg').fadeToggle(200);
+      });
+
+      $('.menu-btn').click(function(event) {
+          $('.menu-full').fadeToggle(200);
+      });
+
 	//smooth scroll to top
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
@@ -53,6 +63,7 @@ $(function() {
 
 
 $(function() {
+
     $(window).scroll( function(){
 
         $('.fadeInDelay').each( function(i){

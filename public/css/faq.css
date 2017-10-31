@@ -28,14 +28,12 @@ svg {
     margin-top: 14px;
 }
 #qaContent ul.accordionPart li .qa_title {
-    padding-left: 28px;
-    color: #000;
+    padding: 8px 16px;
+    color: white;
     cursor: pointer;
     background: bisque;
     border-radius: 4px;
     font-size: 18px;
-    padding-top: 4px;
-    padding-bottom: 4px;
 }
 #qaContent ul.accordionPart li .qa_title_on {
     text-decoration: underline;
