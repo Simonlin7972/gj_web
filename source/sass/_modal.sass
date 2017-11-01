@@ -17,13 +17,24 @@
     margin: 0 auto
     overflow: hidden
     margin-top: 64px
+    position: relative
     .slide-img-wrap
       position: relative
       z-index: 80
       width: 1500px
       height: 500px
       display: flex
-      transform: translateX(-10px)
+      transition: all .3s
+    .sliding
+      transition: all .3s
+      left: 0
+    .sliding-2
+      transition: all .3s
+      left: -1080px
+    .sliding-3
+      transition: all .3s
+      left: -1080px
+
       .slide-img-1
         height: 500px
         background-color: yellow
@@ -37,16 +48,22 @@
         background-color: blue
         flex: 1
     .indicator-wrap
-      position: relative
+      position: absolute
+      bottom: 32px
       z-index: 82
       width: 300px
-      text-align: center
       margin: 0 auto
+      text-align: center
+      left: 0
+      right: 0
       .dot
         display: inline-block
         width: 12px
         height: 12px
         margin: 4px
         border-radius: 20px
-        background-color: $primary-color
-        opacity: .6
+        background-color: $orange
+        transition: all .3s
+        cursor: pointer
+        &:hover
+          background-color: $primary-color
