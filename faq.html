@@ -19,31 +19,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    <script type="text/javascript" src="./source/js/index.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-<script type="text/javascript">
-	$(function(){
-
-		$('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function(){
-			$(this).addClass('qa_title_on');
-		}, function(){
-			$(this).removeClass('qa_title_on');
-		}).click(function(){
-
-			var $qa_content = $(this).next('div.qa_content');
-			if(!$qa_content.is(':visible')){
-				$('#qaContent ul li div.qa_content:visible').slideUp();
-			}
-			$qa_content.slideToggle();
-		}).siblings().addClass('qa_content').hide();
-	});
-</script>
-
-<script type="text/javascript">
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-</script>
-
 </head>
 
 <body>
@@ -63,7 +38,7 @@
             <div class="justify-content-end collapse navbar-collapse" id="navbarTogglerDemo02">
                <ul class="navbar-nav mt-2 mt-lg-0">
                   <li class="nav-item active">
-                     <a class="nav-link" href="#">找打工<span class="sr-only">(current)</span></a>
+                     <a class="nav-link" href="./index.html#find-job-pin">找打工<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">找幫手</a>

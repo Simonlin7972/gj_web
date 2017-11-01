@@ -22,20 +22,42 @@ jQuery(document).ready(function($) {
     $('.full-bg').fadeToggle(200);
   });
 
-  $('.menu-btn').click(function(event) {
-    $('.menu-full').fadeToggle(200);
+  $('.btn-cancel').click(function(event) {
+    $('.full-bg').fadeToggle(200);
   });
 
-  // sliding
+
+  $('#btn-know-more-2').click(function(event) {
+    event.preventDefault();
+    $('.full-bg-2').fadeToggle(200);
+  });
+
+  $('.btn-cancel-2').click(function(event) {
+    $('.full-bg-2').fadeToggle(200);
+  });
+
+  // sliding-img-left
   $('#dot-1').click(function(event) {
     $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3');
   });
   $('#dot-2').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3');;
+    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3');
   });
   $('#dot-3').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2');;
+    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2');
   });
+
+  // sliding-img-right
+  $('#dot-4').click(function(event) {
+    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3');
+  });
+  $('#dot-5').click(function(event) {
+    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3');
+  });
+  $('#dot-6').click(function(event) {
+    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2');
+  });
+
 
   //smooth scroll to top
   $back_to_top.on('click', function(event) {
@@ -44,9 +66,7 @@ jQuery(document).ready(function($) {
       scrollTop: 0,
     }, scroll_top_duration);
   });
-
 });
-
 
 // fadeIn effect
 
@@ -72,9 +92,7 @@ $(function() {
 
 
 $(function() {
-
   $(window).scroll(function() {
-
     $('.fadeInDelay').each(function(i) {
 
       var bottom_of_object = $(this).position().top + $(this).outerHeight();
@@ -91,3 +109,24 @@ $(function() {
 
   });
 });
+
+// faq page
+$(function(){
+
+  $('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function(){
+    $(this).addClass('qa_title_on');
+  }, function(){
+    $(this).removeClass('qa_title_on');
+  }).click(function(){
+
+    var $qa_content = $(this).next('div.qa_content');
+    if(!$qa_content.is(':visible')){
+      $('#qaContent ul li div.qa_content:visible').slideUp();
+    }
+    $qa_content.slideToggle();
+  }).siblings().addClass('qa_content').hide();
+});
+
+$( function() {
+  $( "#tabs" ).tabs();
+} );

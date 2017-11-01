@@ -51,6 +51,9 @@
   <!-- modal-window   -->
   <section class="full-bg">
     <div class="slide-frame">
+      <div class="btn-cancel">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
       <div class="slide-img-wrap">
         <div class="slide-img-1"><img src="./source/images/worker-01.png" alt=""></div>
         <div class="slide-img-2"><img src="./source/images/worker-02.png" alt=""></div>
@@ -64,6 +67,24 @@
     </div>
   </section>
 
+  <section class="full-bg-2">
+    <div class="slide-frame">
+      <div class="btn-cancel-2">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="slide-img-wrap">
+        <div class="slide-img-1"><img src="./source/images/worker-04.png" alt=""></div>
+        <div class="slide-img-2"><img src="./source/images/worker-05.png" alt=""></div>
+        <div class="slide-img-3"><img src="./source/images/worker-06.png" alt=""></div>
+      </div>
+      <div class="indicator-wrap">
+        <div class="dot" id="dot-4"></div>
+        <div class="dot" id="dot-5"></div>
+        <div class="dot" id="dot-6"></div>
+      </div>
+    </div>
+  </section>
+<!-- navbar -->
 
   <nav class="gj-nav navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -144,7 +165,7 @@
       <div class="row">
 
         <div class="col-lg-6 col-md-12">
-          <div class="find-job-wrap fadeInBlock">
+          <div class="find-job-wrap fadeInBlock" id="find-job-pin">
             <div class="find-job-title">
               <h3>想找打工嗎？</h3>
               <a href="#" id="btn-know-more">
@@ -163,7 +184,7 @@
             <div class="green-shpae fadeInBlock"><img src="./source/images/02-bg-green-right.png" alt="green-shape"></div>
             <div class="find-helper-title fadeInBlock">
               <h3>在找幫手嗎？</h3>
-              <a href="#">
+              <a href="#" id="btn-know-more-2">
                 <p>了解更多</p>
                 <i class="fa fa-book fa-angle-right" aria-hidden="true"></i>
               </a>
@@ -298,8 +319,9 @@
 
 </div>
 
-  <a href="#0" class="cd-top btn-go-top">👆🏻</a>
-
+  <a href="#0" class="cd-top btn-go-top">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </a>
 
   <!-- footer start -->
   <footer class="padding-board-48">
