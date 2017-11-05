@@ -1073,6 +1073,8 @@ body {
     margin: -200px; }
     .security-section .security-content-warp .apply-icon {
       margin: 0 auto; }
+    .security-section .security-content-warp h3 {
+      font-size: 32px; }
   .download-section {
     margin-top: 240px;
     padding-bottom: 24px; }
