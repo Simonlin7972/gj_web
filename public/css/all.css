@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 a {
   cursor: pointer !important; }
 
@@ -439,7 +440,7 @@ footer {
       margin-top: 8px; }
 
 * {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI","Roboto","微軟正黑體","Ubuntu","Droid Sans","Ariel","Helvetica Neue","sans-serif"; }
+  font-family: "Noto Sans TC","-apple-system", "BlinkMacSystemFont", "Segoe UI","Roboto","微軟正黑體","Ubuntu","Droid Sans","Ariel","Helvetica Neue","sans-serif"; }
 
 .main-section h1 {
   text-align: right;
@@ -448,14 +449,14 @@ footer {
   font-weight: bold;
   margin-top: 16px;
   letter-spacing: 1px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15); }
 
 .main-section h2 {
   text-align: right;
   font-weight: bold;
   font-size: 32px;
   color: #084887;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15); }
 
 .section-2 {
   height: 800px; }
@@ -539,8 +540,7 @@ footer {
   .main-section h1 {
     text-align: center;
     font-size: 32px;
-    margin-top: 16px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+    margin-top: 16px; }
   .main-section h2 {
     text-align: center;
     font-size: 28px;
@@ -1020,7 +1020,9 @@ body {
       top: 520px;
       left: 32px; }
     .apply-section .apply-image-wrap .orang-shape {
-      top: 261px; }
+      top: 341px; }
+      .apply-section .apply-image-wrap .orang-shape img {
+        width: 80%; }
     .apply-section .apply-image-wrap .businessman {
       top: 306px;
       left: 80px; }
