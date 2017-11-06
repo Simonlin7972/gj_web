@@ -855,7 +855,7 @@ body {
 
 .qr-section {
   position: relative;
-  background-image: url(gj_web/source/images/city-bg.jpg);
+  background-image: url(../../source/images/city-bg.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
