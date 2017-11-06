@@ -377,12 +377,11 @@ footer {
   .about-section p {
     margin: 0 auto;
     text-align: center;
-    max-width: 600px;
     font-size: 20px;
     font-weight: bold;
     line-height: 40px;
     color: #444444;
-    padding-top: 40px; }
+    padding-top: 24px; }
   .about-section .contact-us {
     margin-top: 40px;
     text-align: center; }
