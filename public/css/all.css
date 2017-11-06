@@ -553,15 +553,17 @@ footer {
   color: #444; }
 
 .download-section h3, .download-section h4 {
-  text-align: right; }
+  text-align: center;
+  font-weight: bold; }
 
 .download-section h3 {
   font-size: 40px;
   margin-bottom: 16px; }
 
 .download-section h4 {
-  font-size: 24px;
-  color: #5b5b5b; }
+  font-size: 32px;
+  color: #5b5b5b;
+  font-family: "Helvetica"; }
 
 .download-section .good-job-title {
   padding-left: 8px;
@@ -858,16 +860,13 @@ body {
 
 .download-section {
   padding-bottom: 72px; }
-  .download-section .download-contnet-wrap {
-    padding-right: 64px; }
   .download-section .cta-wrap {
-    padding-right: 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .download-section .cta-wrap .cta-box {
       width: 200px;
       height: 60px;
@@ -994,16 +993,16 @@ body {
     .main-section .section-1-people {
       top: 150px; }
       .main-section .section-1-people .boss-man {
-        top: 10px;
-        right: 90px; }
+        top: 40px;
+        right: 108px; }
         .main-section .section-1-people .boss-man img {
-          width: 80%; }
+          width: 75%; }
       .main-section .section-1-people .boss-women {
         position: absolute;
-        top: 62px;
-        right: 0; }
+        top: 100px;
+        right: 16px; }
         .main-section .section-1-people .boss-women img {
-          width: 80%; }
+          width: 75%; }
       .main-section .section-1-people .people {
         position: absolute;
         left: 63px;
@@ -1049,15 +1048,16 @@ body {
       .apply-section .apply-content-warp h3 {
         font-size: 32px; }
     .apply-section .apply-image-wrap .timer {
-      top: 520px;
-      left: 32px; }
+      top: 410px;
+      left: 230px; }
     .apply-section .apply-image-wrap .orang-shape {
-      top: 341px; }
+      top: 400px;
+      left: -90px; }
       .apply-section .apply-image-wrap .orang-shape img {
-        width: 80%; }
+        width: 65%; }
     .apply-section .apply-image-wrap .businessman {
       top: 306px;
-      left: 80px; }
+      left: -20px; }
       .apply-section .apply-image-wrap .businessman img {
         width: 70%; }
   .review-section {
@@ -1125,16 +1125,20 @@ body {
       display: block;
       margin: 0 auto; }
       .download-section .cta-wrap .cta-box {
+        width: 240px;
+        height: 72px;
         margin: 0 auto;
         margin-top: 24px; }
   .qr-section {
-    margin-top: 300px; }
+    margin-top: 240px; }
     .qr-section .iphone-logo {
       margin: 0 auto;
       right: 0;
-      left: 0; }
+      left: 0;
+      text-align: center;
+      height: 350px; }
       .qr-section .iphone-logo img {
-        width: 110%; }
+        width: 80%; }
     .qr-section .qr-img {
       display: none; } }
 
