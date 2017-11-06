@@ -38,24 +38,24 @@ jQuery(document).ready(function($) {
 
   // sliding-img-left
   $('#dot-1').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3');
+    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3').removeClass('sliding-left-animation');
   });
   $('#dot-2').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3');
+    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3').removeClass('sliding-left-animation');
   });
   $('#dot-3').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2');
+    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2').removeClass('sliding-left-animation');
   });
 
   // sliding-img-right
   $('#dot-4').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3');
+    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3').removeClass('sliding-left-animation-2');
   });
   $('#dot-5').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3');
+    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3').removeClass('sliding-left-animation-2');
   });
   $('#dot-6').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2');
+    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2').removeClass('sliding-left-animation-2');
   });
 
 

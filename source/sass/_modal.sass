@@ -38,7 +38,6 @@
         background-color: $primary-color
         i
           color: white
-
     .slide-img-wrap
       position: absolute
       z-index: 80
@@ -47,6 +46,8 @@
       width: 3240px
       img
         width: 100%
+    .sliding-left-animation
+      animation: slide-left 4s ease both
     .sliding
       transition: all .3s
       transform: translateX(0)
@@ -139,27 +140,22 @@
       width: 3240px
       img
         width: 100%
+    .sliding-left-animation-2
+      animation: slide-left 4s ease both
     .sliding
-      transition: all .3s
       transform: translateX(0)
     .sliding-2
-      transition: all .3s
       transform: translateX(-1080px)
     .sliding-3
-      transition: all .3s
       transform: translateX(-2160px)
-
       .slide-img-1
         height: 500px
-        background-color: yellow
         flex: 1
         img
           width: 100%
       .slide-img-2
-        background-color: red
         flex: 1
       .slide-img-3
-        background-color: blue
         flex: 1
     .indicator-wrap
       position: absolute
@@ -181,3 +177,16 @@
         cursor: pointer
         &:hover
           background-color: $primary-color
+
+
+@keyframes slide-left
+  0%
+    transform: translateX(0)
+  25%
+    transform: translateX(0)
+  50%
+    transform: translateX(-1080px)
+  75%
+    transform: translateX(-1080px)
+  100%
+    transform: translateX(-2160px)

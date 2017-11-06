@@ -59,6 +59,9 @@ a {
       width: 3240px; }
       .full-bg .slide-frame .slide-img-wrap img {
         width: 100%; }
+    .full-bg .slide-frame .sliding-left-animation {
+      -webkit-animation: slide-left 4s ease both;
+              animation: slide-left 4s ease both; }
     .full-bg .slide-frame .sliding {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
@@ -174,42 +177,33 @@ a {
       width: 3240px; }
       .full-bg-2 .slide-frame .slide-img-wrap img {
         width: 100%; }
+    .full-bg-2 .slide-frame .sliding-left-animation-2 {
+      -webkit-animation: slide-left 4s ease both;
+              animation: slide-left 4s ease both; }
     .full-bg-2 .slide-frame .sliding {
-      -webkit-transition: all .3s;
-      -o-transition: all .3s;
-      transition: all .3s;
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
               transform: translateX(0); }
     .full-bg-2 .slide-frame .sliding-2 {
-      -webkit-transition: all .3s;
-      -o-transition: all .3s;
-      transition: all .3s;
       -webkit-transform: translateX(-1080px);
           -ms-transform: translateX(-1080px);
               transform: translateX(-1080px); }
     .full-bg-2 .slide-frame .sliding-3 {
-      -webkit-transition: all .3s;
-      -o-transition: all .3s;
-      transition: all .3s;
       -webkit-transform: translateX(-2160px);
           -ms-transform: translateX(-2160px);
               transform: translateX(-2160px); }
       .full-bg-2 .slide-frame .sliding-3 .slide-img-1 {
         height: 500px;
-        background-color: yellow;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1; }
         .full-bg-2 .slide-frame .sliding-3 .slide-img-1 img {
           width: 100%; }
       .full-bg-2 .slide-frame .sliding-3 .slide-img-2 {
-        background-color: red;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1; }
       .full-bg-2 .slide-frame .sliding-3 .slide-img-3 {
-        background-color: blue;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1; }
@@ -235,6 +229,40 @@ a {
         cursor: pointer; }
         .full-bg-2 .slide-frame .indicator-wrap .dot:hover {
           background-color: #084887; }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  25% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-1080px);
+            transform: translateX(-1080px); }
+  75% {
+    -webkit-transform: translateX(-1080px);
+            transform: translateX(-1080px); }
+  100% {
+    -webkit-transform: translateX(-2160px);
+            transform: translateX(-2160px); } }
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  25% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-1080px);
+            transform: translateX(-1080px); }
+  75% {
+    -webkit-transform: translateX(-1080px);
+            transform: translateX(-1080px); }
+  100% {
+    -webkit-transform: translateX(-2160px);
+            transform: translateX(-2160px); } }
 
 .gj-nav {
   position: fixed;
@@ -1123,7 +1151,7 @@ body {
   font-weight: bold;
   right: 24px;
   bottom: 24px;
-  z-index: 299;
+  z-index: 10;
   text-align: center;
   line-height: 48px;
   opacity: 0; }
