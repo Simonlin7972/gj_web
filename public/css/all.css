@@ -450,7 +450,7 @@ footer {
 
 .main-section h2 {
   text-align: right;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 32px;
   color: #084887;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
@@ -869,7 +869,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6); }
   .qr-section .iphone-logo {
     position: absolute;
     width: 269px;
