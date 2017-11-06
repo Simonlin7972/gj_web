@@ -262,6 +262,9 @@ a {
       margin-right: 8px; }
       .gj-nav .gj-logo-wrap .logo img {
         width: 100%; }
+    .gj-nav .gj-logo-wrap:hover {
+      background-color: white;
+      text-decoration: none; }
     .gj-nav .gj-logo-wrap p {
       font-size: 28px;
       line-height: 40px;
