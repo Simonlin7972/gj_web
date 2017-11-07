@@ -604,12 +604,12 @@ body {
 
 .fadeInBlock {
   opacity: 0;
-  -webkit-transform: translateY(80px);
-      -ms-transform: translateY(80px);
-          transform: translateY(80px);
-  -webkit-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s; }
+  -webkit-transform: translateY(60px);
+      -ms-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .push-up {
   -webkit-transform: translateY(0);
@@ -732,6 +732,7 @@ body {
 .section-2 .find-job-wrap {
   position: relative; }
   .section-2 .find-job-wrap .find-job-title {
+    width: 320px;
     position: absolute;
     top: 40px;
     left: 148px;
@@ -757,6 +758,7 @@ body {
 .section-2 .find-helper-wrap {
   position: relative; }
   .section-2 .find-helper-wrap .find-helper-title {
+    width: 320px;
     position: absolute;
     top: 190px;
     left: 190px;
@@ -778,68 +780,71 @@ body {
     .section-2 .find-helper-wrap .green-shpae img {
       width: 100%; }
 
-.apply-section .apply-image-wrap {
-  position: relative;
-  z-index: 1; }
-  .apply-section .apply-image-wrap .timer {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    top: 60px;
-    right: 280px; }
-    .apply-section .apply-image-wrap .timer img {
-      width: 100%; }
-  .apply-section .apply-image-wrap .businessman {
-    position: absolute;
-    width: 359px;
-    height: 507px;
-    z-index: 2;
-    top: -107px;
-    left: 80px; }
-    .apply-section .apply-image-wrap .businessman img {
-      width: 100%; }
-  .apply-section .apply-image-wrap .orang-shape {
-    position: absolute;
-    width: 805px;
-    height: 400px;
+.apply-section {
+  margin-top: 240px; }
+  .apply-section .apply-image-wrap {
+    position: relative;
     z-index: 1; }
-    .apply-section .apply-image-wrap .orang-shape img {
-      width: 100%; }
+    .apply-section .apply-image-wrap .timer {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      z-index: 3;
+      top: 60px;
+      right: 280px; }
+      .apply-section .apply-image-wrap .timer img {
+        width: 100%; }
+    .apply-section .apply-image-wrap .businessman {
+      position: absolute;
+      width: 359px;
+      height: 507px;
+      z-index: 2;
+      top: -107px;
+      left: 80px; }
+      .apply-section .apply-image-wrap .businessman img {
+        width: 100%; }
+    .apply-section .apply-image-wrap .orang-shape {
+      position: absolute;
+      width: 805px;
+      height: 400px;
+      z-index: 1; }
+      .apply-section .apply-image-wrap .orang-shape img {
+        width: 100%; }
+  .apply-section .apply-content-warp {
+    position: relative;
+    z-index: 99; }
 
-.apply-section .apply-content-warp {
-  position: relative;
-  z-index: 99; }
-
-.review-section .review-image-wrap {
-  position: relative;
-  z-index: 1; }
-  .review-section .review-image-wrap .text-rating {
-    position: absolute;
-    width: 319px;
-    height: 147px;
-    z-index: 3;
-    top: 119px;
-    left: 150px; }
-    .review-section .review-image-wrap .text-rating img {
-      width: 100%; }
-  .review-section .review-image-wrap .people-phone {
-    position: absolute;
-    width: 419px;
-    height: 299px;
-    z-index: 2;
-    top: 209px;
-    left: 76px; }
-    .review-section .review-image-wrap .people-phone img {
-      width: 100%; }
-  .review-section .review-image-wrap .yellow-shape-two {
-    position: absolute;
-    width: 805px;
-    height: 400px;
-    z-index: 1;
-    bottom: -380px; }
-    .review-section .review-image-wrap .yellow-shape-two img {
-      width: 95%; }
+.review-section {
+  margin-top: 200px; }
+  .review-section .review-image-wrap {
+    position: relative;
+    z-index: 1; }
+    .review-section .review-image-wrap .text-rating {
+      position: absolute;
+      width: 319px;
+      height: 147px;
+      z-index: 3;
+      top: 119px;
+      left: 150px; }
+      .review-section .review-image-wrap .text-rating img {
+        width: 100%; }
+    .review-section .review-image-wrap .people-phone {
+      position: absolute;
+      width: 419px;
+      height: 299px;
+      z-index: 2;
+      top: 209px;
+      left: 76px; }
+      .review-section .review-image-wrap .people-phone img {
+        width: 100%; }
+    .review-section .review-image-wrap .yellow-shape-two {
+      position: absolute;
+      width: 805px;
+      height: 400px;
+      z-index: 1;
+      bottom: -380px; }
+      .review-section .review-image-wrap .yellow-shape-two img {
+        width: 95%; }
 
 .security-section {
   margin-top: 300px; }
@@ -1261,3 +1266,66 @@ body {
     opacity: 0.8;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
+#parallax-bg3 {
+  z-index: 70;
+  position: fixed;
+  top: 0;
+  width: 940px; }
+  #parallax-bg3 #bg3-1 {
+    position: absolute;
+    top: 580px;
+    left: 300px;
+    width: 70px; }
+  #parallax-bg3 #bg3-2 {
+    position: absolute;
+    top: 560px;
+    left: 920px;
+    width: 76px; }
+  #parallax-bg3 #bg3-3 {
+    position: absolute;
+    top: 1250px;
+    left: 180px;
+    width: 105px; }
+  #parallax-bg3 #bg3-4 {
+    position: absolute;
+    top: 1200px;
+    left: 1100px;
+    width: 70px; }
+  #parallax-bg3 #bg3-5 {
+    position: absolute;
+    top: 1660px;
+    left: 700px;
+    width: 75px; }
+  #parallax-bg3 #bg3-6 {
+    position: absolute;
+    top: 2450px;
+    left: 1080px;
+    width: 96px; }
+  #parallax-bg3 #bg3-7 {
+    position: absolute;
+    top: 2750px;
+    left: 180px;
+    width: 106px; }
+  #parallax-bg3 #bg3-8 {
+    position: absolute;
+    top: 3500px;
+    left: 1180px;
+    width: 80px; }
+
+#parallax-bg2 {
+  z-index: 30;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 1200px; }
+  #parallax-bg2 #bg2-1 {
+    position: absolute; }
+
+#parallax-bg1 {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 1200px; }
+  #parallax-bg1 #bg1-1 {
+    position: absolute; }
