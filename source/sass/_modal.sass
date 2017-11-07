@@ -1,3 +1,7 @@
+.pop-img-sm
+  display: none
+  img
+    width: 100%
 // 找打工part
 .full-bg
   display: none
@@ -57,10 +61,7 @@
     .sliding-3
       transition: all .3s
       transform: translateX(-2160px)
-
       .slide-img-1
-        height: 500px
-        background-color: yellow
         flex: 1
         img
           width: 100%
@@ -178,7 +179,20 @@
         &:hover
           background-color: $primary-color
 
-
+// popup RWD
+@media (max-width: 576px)
+  .slide-frame
+    width: 290px
+    height: 420px !important
+    .slide-img-wrap
+      width: 960px
+      .slide-img-1
+        height: 420px
+        .pop-img-sm
+          display: block
+        .pop-img-lg
+          display: none
+// animation
 @keyframes slide-left
   0%
     transform: translateX(0)
