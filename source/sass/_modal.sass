@@ -2,6 +2,7 @@
   display: none
   img
     width: 100%
+
 // 找打工part
 .full-bg
   display: none
@@ -53,23 +54,16 @@
     .sliding-left-animation
       animation: slide-left 4s ease both
     .sliding
-      transition: all .3s
       transform: translateX(0)
     .sliding-2
-      transition: all .3s
       transform: translateX(-1080px)
     .sliding-3
-      transition: all .3s
       transform: translateX(-2160px)
       .slide-img-1
         flex: 1
-        img
-          width: 100%
       .slide-img-2
-        background-color: red
         flex: 1
       .slide-img-3
-        background-color: blue
         flex: 1
     .indicator-wrap
       position: absolute
@@ -150,14 +144,17 @@
     .sliding-3
       transform: translateX(-2160px)
       .slide-img-1
-        height: 500px
         flex: 1
         img
           width: 100%
       .slide-img-2
         flex: 1
+        img
+          width: 100%
       .slide-img-3
         flex: 1
+        img
+          width: 100%
     .indicator-wrap
       position: absolute
       bottom: 32px
@@ -179,19 +176,7 @@
         &:hover
           background-color: $primary-color
 
-// popup RWD
-@media (max-width: 576px)
-  .slide-frame
-    width: 290px
-    height: 420px !important
-    .slide-img-wrap
-      width: 960px
-      .slide-img-1
-        height: 420px
-        .pop-img-sm
-          display: block
-        .pop-img-lg
-          display: none
+
 // animation
 @keyframes slide-left
   0%
@@ -204,3 +189,41 @@
     transform: translateX(-1080px)
   100%
     transform: translateX(-2160px)
+
+
+// popup RWD
+
+@media (max-width: 576px)
+  .slide-frame
+    width: 290px
+    height: 420px !important
+    .sliding
+      transform: translateX(0) !important
+    .sliding-2
+      transform: translateX(-290px) !important
+    .sliding-3
+      transform: translateX(-580px) !important
+    .slide-img-wrap
+      width: 960px
+      height: 420px
+      .slide-img-1,.slide-img-2,.slide-img-3
+        img
+          width: 100%
+      .pop-img-sm
+        display: block
+        img
+          width: 100%
+      .pop-img-lg
+        display: none !important
+
+  @keyframes slide-left
+    0%
+      transform: translateX(0)
+    25%
+      transform: translateX(0)
+    50%
+      transform: translateX(-290px)
+    75%
+      transform: translateX(-290px)
+    100%
+      transform: translateX(-580px)
