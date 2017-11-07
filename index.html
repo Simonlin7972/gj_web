@@ -12,6 +12,90 @@
 
   <script type="text/javascript" src="./source/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="./source/js/all.js"></script>
+  <script type="text/javascript" src="./source/js/parallax.js"></script>
+<style>
+/* Parallax
+*****************************************************************/
+
+
+
+#parallax-bg3 {
+  z-index: 70;
+  position: fixed;
+  top: 0;
+  width: 940px;
+  }
+  #bg3-1 {
+    position: absolute;
+    top: 580px;
+    left: 300px;
+    width: 70px;
+    }
+  #bg3-2 {
+    position: absolute;
+    top: 560px;
+    left: 920px;
+    width: 76px;
+    }
+  #bg3-3 {
+    position: absolute;
+    top: 1250px;
+    left: 180px;
+    width: 105px;
+    }
+  #bg3-4 {
+    position: absolute;
+    top: 1200px;
+    left: 1100px;
+    width: 70px;    
+    }
+  #bg3-5 {
+    position: absolute;
+    top: 1660px;
+    left: 700px;
+    width: 75px;    
+    }
+  #bg3-6 {
+    position: absolute;
+    top: 2450px;
+    left: 1080px;
+    width: 96px;
+    }
+  #bg3-7 {
+    position: absolute;
+    top: 2750px;
+    left: 180px;
+    width: 106px;
+    }
+  #bg3-8 {
+    position: absolute;
+    top: 3500px;
+    left: 1180px;
+    width: 80px;
+    }
+
+#parallax-bg2 {
+  z-index: 30;
+  position: fixed;
+  left: 50%; 
+  top: 0;
+  width: 1200px;
+  }
+  #bg2-1 {
+    position: absolute;
+    }
+
+#parallax-bg1 {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 1200px;
+  }
+  #bg1-1 {
+    position: absolute;
+    }
+  
+</style>
 </head>
 
 <body>
@@ -126,8 +210,23 @@
     </div>
   </nav>
 
+
+
   <div class="homepage">
     <!-- main section -->
+  
+    <div id="parallax-bg3">
+      <img id="bg3-1" src="./source/images/triangle-img-01.png" />
+      <img id="bg3-2" src="./source/images/triangle-img-02.png" />
+      <img id="bg3-3" src="./source/images/triangle-img-03.png"/>
+      <img id="bg3-4" src="./source/images/triangle-img-04.png" />
+      <img id="bg3-5" src="./source/images/triangle-img-05.png" />
+      <img id="bg3-6" src="./source/images/triangle-img-06.png"/>
+      <img id="bg3-7" src="./source/images/triangle-img-07.png" />
+      <img id="bg3-8" src="./source/images/triangle-img-08.png" />      
+    </div>
+
+
     <section class="main-section padding-board-160">
       <div class="container">
         <div class="row">
@@ -140,7 +239,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6" id="feature-00">
             <div class="section-1-content">
               <h2>找好幫手？讓我們來！</h2>
               <h1>史上最快的打工平台</h1>
@@ -164,23 +263,24 @@
     <!-- section-2 -->
     <section class="section-2 padding-board-160">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="find-job-wrap fadeInBlock" id="find-job-pin">
-              <div class="find-job-title">
+        <div class="row" id="find-job-pin">
+          <div class="col-lg-6 col-md-12" id="parallax-bg1">
+            <div class="find-job-wrap" id="bg1-1">
+              <div class="yellow-shape fadeInBlock"><img src="./source/images/02-bg-yellow-left.png" alt="yellow-shape"></div>
+              <div class="student fadeInDelay"><img src="./source/images/students.png" alt="students"></div>
+              <div class="find-job-title fadeInBlock">
                 <h3>想找打工嗎？</h3>
                 <a href="#" id="btn-know-more">
                   <p>了解更多</p>
                   <i class="fa fa-book fa-angle-right" aria-hidden="true"></i>
-                </a>
+                </a>              
               </div>
-              <div class="yellow-shape"><img src="./source/images/02-bg-yellow-left.png" alt="yellow-shape"></div>
-              <div class="student fadeInDelay"><img src="./source/images/students.png" alt="students"></div>
+              
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-12">
-            <div class="find-helper-wrap">
+          <div class="col-lg-6 col-md-12" id="parallax-bg2">
+            <div class="find-helper-wrap" id="bg2-1">
               <div class="boss-two fadeInDelay"><img src="./source/images/02-boss.png" alt="02-boss"></div>
               <div class="green-shpae fadeInBlock"><img src="./source/images/02-bg-green-right.png" alt="green-shape"></div>
               <div class="find-helper-title fadeInBlock">
@@ -214,7 +314,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="feature-01">
             <div class="apply-content-warp">
               <div class="apply-icon mb-4">
                 <img src="./source/images/03-img-title.png" alt="">
@@ -233,7 +333,7 @@
     <section class="review-section fadeInBlock padding-board-160">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5" id="feature-02">
             <div class="review-content-warp">
               <div class="apply-icon mb-4">
                 <img src="./source/images/04-img-title.png" alt="">
@@ -274,7 +374,7 @@
                 <img src="./source/images/05-bg-green.png" alt=""></div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="feature-03">
             <div class="security-content-warp">
               <div class="apply-icon mb-4">
                 <img src="./source/images/05-img-title.png" alt="">
@@ -291,10 +391,10 @@
     <!-- download-section -->
     <section class="download-section fadeInBlock padding-board-160">
       <div class="container">
-        <div class="row">
+        <div class="row" >
           <div class="col-md-6"></div>
           <div class="col-md-6">
-            <div class="download-contnet-wrap">
+            <div class="download-contnet-wrap" id="about">
               <h3>免費下載立即體驗</h3>
               <h4>Let’s do the<span class="good-job-title">Good Job!</span></h4>
             </div>
