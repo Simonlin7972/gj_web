@@ -1,21 +1,21 @@
 body
   background-color: $bg-color
 
-.fadeInBlock
-  opacity: 0
-  transform: translateY(60px)
-  transition: all 0.5s
-.push-up
-  transform: translateY(0)
-  opacity: 1
-
-.fadeInDelay
-  opacity: 0
-  transition: all 0.8s
-
-.push-up-delay
-  animation: fade-up .6s ease both
-  animation-delay: .7s
+// .fadeInBlock
+//   opacity: 0
+//   transform: translateY(60px)
+//   transition: all 0.5s
+// .push-up
+//   transform: translateY(0)
+//   opacity: 1
+//
+// .fadeInDelay
+//   opacity: 0
+//   transition: all 0.8s
+//
+// .push-up-delay
+//   animation: fade-up .6s ease both
+//   animation-delay: .7s
 
 
 .padding-board-160
@@ -185,7 +185,7 @@ body
         width: 100%
   .apply-content-warp
     position: relative
-    z-index: 99
+    z-index: 40
 
 // review
 .review-section
@@ -323,9 +323,6 @@ body
     opacity: 1
     transform: translateY(0)
 
-
-
-
 // RWD setting
 @media screen and (min-width: 768px) and (max-width: 992px)
   .main-section
@@ -431,11 +428,11 @@ body
         left: 64px
         img
           width: 80%
-
   .apply-section
-    margin-top: 72px
+    margin-top: 0
     .apply-content-warp
       text-align: center
+      top: -90px
       .apply-icon
         margin: 0 auto
       h3

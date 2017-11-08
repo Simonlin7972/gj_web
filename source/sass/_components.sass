@@ -129,7 +129,7 @@
 
 #parallax-bg2
   z-index: 30
-  position: fixed
+  position: relative
   left: 50%
   top: 0
   width: 1200px
@@ -139,7 +139,6 @@
 #parallax-bg1
   z-index: 20
   position: fixed
-  top: 0
   width: 1200px
   #bg1-1
     position: absolute
@@ -148,5 +147,10 @@
 @media (max-width: 576px)
   .arrow-indicator
     top: 600px
+  #parallax-bg1
+    #bg1-1
+      top: -140px
+  #parallax-bg2
+    left: 0
   #parallax-bg3
     display: none
