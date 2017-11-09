@@ -560,14 +560,14 @@ footer {
     width: 100%; }
 
 .apply-section .apply-content-warp h3 {
-  font-size: 40px;
+  font-size: 24px;
   color: #ff9519;
-  line-height: 40px; }
+  line-height: 28px; }
 
 .apply-section .apply-content-warp p {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0;
-  line-height: 28px;
+  line-height: 24px;
   font-weight: 500;
   color: #444; }
 
@@ -578,14 +578,14 @@ footer {
     width: 100%; }
 
 .review-section .review-content-warp h3 {
-  font-size: 40px;
+  font-size: 24px;
   color: #084887;
-  line-height: 40px; }
+  line-height: 28px; }
 
 .review-section .review-content-warp p {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0;
-  line-height: 28px;
+  line-height: 24px;
   font-weight: 500;
   color: #444; }
 
@@ -596,14 +596,14 @@ footer {
     width: 100%; }
 
 .security-section .security-content-warp h3 {
-  font-size: 40px;
+  font-size: 24px;
   color: #00a6a6;
-  line-height: 40px; }
+  line-height: 28px; }
 
 .security-section .security-content-warp p {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0;
-  line-height: 28px;
+  line-height: 24px;
   font-weight: 500;
   color: #444; }
 
@@ -637,7 +637,9 @@ footer {
     font-weight: bold; }
   .section-2 .find-job-wrap .find-job-title h3 {
     font-size: 24px;
-    margin-bottom: 12px; } }
+    margin-bottom: 12px; }
+  .download-section .download-contnet-wrap .good-job-title {
+    font-size: 24px; } }
 
 body {
   background-color: rgba(0, 0, 0, 0.02); }
@@ -745,7 +747,7 @@ body {
 .section-2 .find-job-wrap {
   position: relative; }
   .section-2 .find-job-wrap .find-job-title {
-    width: 320px;
+    width: 160px;
     position: absolute;
     top: 40px;
     left: 148px;
@@ -771,7 +773,7 @@ body {
 .section-2 .find-helper-wrap {
   position: relative; }
   .section-2 .find-helper-wrap .find-helper-title {
-    width: 320px;
+    width: 160px;
     position: absolute;
     top: 190px;
     left: 190px;
@@ -1054,101 +1056,109 @@ body {
           width: 60%; }
   .section-2 {
     padding-top: 0; }
-    .section-2 .find-job-wrap .yellow-shape img {
-      width: 64%; }
+    .section-2 .find-job-wrap .yellow-shape {
+      left: -55px; }
+      .section-2 .find-job-wrap .yellow-shape img {
+        width: 60%; }
     .section-2 .find-job-wrap .student {
-      top: 124px;
-      left: 78px; }
+      top: 116px;
+      left: 18px; }
       .section-2 .find-job-wrap .student img {
-        width: 53%; }
+        width: 50%; }
     .section-2 .find-job-wrap .find-job-title {
+      text-align: center;
       left: 56px; }
     .section-2 .find-helper-wrap {
-      top: 400px; }
+      top: 480px; }
       .section-2 .find-helper-wrap .find-helper-title {
-        top: 170px;
-        left: 100px; }
+        top: 129px;
+        left: 100px;
+        text-align: center; }
         .section-2 .find-helper-wrap .find-helper-title h3 {
           font-size: 24px;
           margin-bottom: 12px; }
       .section-2 .find-helper-wrap .green-shpae img {
-        width: 80%; }
+        width: 70%; }
       .section-2 .find-helper-wrap .boss-two {
-        top: 255px;
+        top: 224px;
         left: 64px; }
         .section-2 .find-helper-wrap .boss-two img {
-          width: 80%; }
+          width: 70%; }
   .apply-section {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 0; }
     .apply-section .apply-content-warp {
       text-align: center;
       top: -90px; }
       .apply-section .apply-content-warp .apply-icon {
         margin: 0 auto; }
-      .apply-section .apply-content-warp h3 {
-        font-size: 32px; }
-    .apply-section .apply-image-wrap .timer {
-      top: 410px;
-      left: 230px; }
-    .apply-section .apply-image-wrap .orang-shape {
-      top: 400px;
-      left: -90px; }
-      .apply-section .apply-image-wrap .orang-shape img {
-        width: 65%; }
-    .apply-section .apply-image-wrap .businessman {
-      top: 306px;
-      left: -20px; }
-      .apply-section .apply-image-wrap .businessman img {
-        width: 70%; }
+    .apply-section .apply-image-wrap {
+      bottom: 110px; }
+      .apply-section .apply-image-wrap .timer {
+        top: 400px;
+        left: 182px; }
+        .apply-section .apply-image-wrap .timer img {
+          width: 80%; }
+      .apply-section .apply-image-wrap .orang-shape {
+        top: 370px;
+        left: -85px; }
+        .apply-section .apply-image-wrap .orang-shape img {
+          width: 60%; }
+      .apply-section .apply-image-wrap .businessman {
+        top: 306px;
+        left: -41px; }
+        .apply-section .apply-image-wrap .businessman img {
+          width: 60%; }
   .review-section {
     margin-top: 200px; }
     .review-section .review-content-warp {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 24px; }
       .review-section .review-content-warp .apply-icon {
         margin: 0 auto; }
-      .review-section .review-content-warp h3 {
-        font-size: 32px; }
     .review-section .review-image-wrap {
-      margin-top: -60px; }
+      margin-top: 10px;
+      margin-left: -30px; }
       .review-section .review-image-wrap .yellow-shape-two {
-        top: 100px; }
+        top: 127px;
+        left: -7px; }
         .review-section .review-image-wrap .yellow-shape-two img {
-          width: 50%; }
+          width: 45%; }
       .review-section .review-image-wrap .people-phone {
-        top: 169px;
-        left: 28px; }
+        top: 183px;
+        left: 16px; }
         .review-section .review-image-wrap .people-phone img {
-          width: 70%; }
+          width: 65%; }
       .review-section .review-image-wrap .text-rating {
-        top: 100px;
-        left: 100px; }
+        top: 125px;
+        left: 96px; }
         .review-section .review-image-wrap .text-rating img {
-          width: 80%; }
-  .security-section .security-image-wrap .green-shpae-two {
-    height: 300px;
-    right: 0;
-    left: 0;
-    bottom: -580px;
-    top: 60px; }
-    .security-section .security-image-wrap .green-shpae-two img {
-      width: 60%; }
-  .security-section .security-image-wrap .iphone-screen {
-    top: 50px;
-    left: 120px; }
-    .security-section .security-image-wrap .iphone-screen img {
-      width: 80%; }
-  .security-section .security-image-wrap .icon-secure {
-    top: 240px;
-    right: -50px; }
-    .security-section .security-image-wrap .icon-secure img {
-      width: 80%; }
-  .security-section .security-content-warp {
-    text-align: center;
-    margin: -200px; }
-    .security-section .security-content-warp .apply-icon {
-      margin: 0 auto; }
-    .security-section .security-content-warp h3 {
-      font-size: 32px; }
+          width: 70%; }
+  .security-section {
+    margin-top: 340px; }
+    .security-section .security-image-wrap .green-shpae-two {
+      height: 300px;
+      right: 0;
+      left: -37px;
+      bottom: -580px;
+      top: 41px; }
+      .security-section .security-image-wrap .green-shpae-two img {
+        width: 63%; }
+    .security-section .security-image-wrap .iphone-screen {
+      top: 78px;
+      left: 63px; }
+      .security-section .security-image-wrap .iphone-screen img {
+        width: 70%; }
+    .security-section .security-image-wrap .icon-secure {
+      top: 209px;
+      right: -102px; }
+      .security-section .security-image-wrap .icon-secure img {
+        width: 55%; }
+    .security-section .security-content-warp {
+      text-align: center;
+      margin: -200px; }
+      .security-section .security-content-warp .apply-icon {
+        margin: 0 auto; }
   .download-section {
     margin-top: 240px;
     padding-bottom: 24px; }
@@ -1171,7 +1181,7 @@ body {
         margin: 0 auto;
         margin-top: 24px; }
   .qr-section {
-    margin-top: 240px; }
+    margin-top: 200px; }
     .qr-section .iphone-logo {
       margin: 0 auto;
       right: 0;
