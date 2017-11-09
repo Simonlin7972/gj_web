@@ -16,6 +16,16 @@ jQuery(document).ready(function($) {
     }
   });
 
+
+  //smooth scroll to top
+  $back_to_top.on('click', function(event) {
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0,
+    }, scroll_top_duration);
+  });
+  });
+
   // slider popup
   $('#btn-know-more').click(function(event) {
     event.preventDefault();
@@ -35,6 +45,7 @@ jQuery(document).ready(function($) {
   $('.btn-cancel-2').click(function(event) {
     $('.full-bg-2').fadeToggle(200);
   });
+
 
   // sliding-img-left
   $('#dot-1').click(function(event) {
@@ -59,14 +70,7 @@ jQuery(document).ready(function($) {
   });
 
 
-  //smooth scroll to top
-  $back_to_top.on('click', function(event) {
-    event.preventDefault();
-    $('body,html').animate({
-      scrollTop: 0,
-    }, scroll_top_duration);
-  });
-});
+
 
 // // fadeIn effect
 // $(function() {
@@ -112,22 +116,33 @@ jQuery(document).ready(function($) {
 
 
 // faq page
-$(function(){
+$(function() {
 
-  $('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function(){
+  $('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function() {
     $(this).addClass('qa_title_on');
-  }, function(){
+  }, function() {
     $(this).removeClass('qa_title_on');
-  }).click(function(){
+  }).click(function() {
 
     var $qa_content = $(this).next('div.qa_content');
-    if(!$qa_content.is(':visible')){
+    if (!$qa_content.is(':visible')) {
       $('#qaContent ul li div.qa_content:visible').slideUp();
     }
     $qa_content.slideToggle();
   }).siblings().addClass('qa_content').hide();
 });
 
-$( function() {
-  $( "#tabs" ).tabs();
-} );
+$(function() {
+  $("#tabs").tabs();
+});
+
+
+$(document).ready(function() {
+  // 產品特色往下
+  $('.scroll-down').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(".businessman").offset().top = $('.gj-nav').height()
+    }, 1000);
+  });
+});

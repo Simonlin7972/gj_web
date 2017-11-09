@@ -560,14 +560,14 @@ footer {
     width: 100%; }
 
 .apply-section .apply-content-warp h3 {
-  font-size: 24px;
+  font-size: 32px;
   color: #ff9519;
-  line-height: 28px; }
+  line-height: 40px; }
 
 .apply-section .apply-content-warp p {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 0;
-  line-height: 24px;
+  line-height: 32px;
   font-weight: 500;
   color: #444; }
 
@@ -578,14 +578,14 @@ footer {
     width: 100%; }
 
 .review-section .review-content-warp h3 {
-  font-size: 24px;
+  font-size: 32px;
   color: #084887;
-  line-height: 28px; }
+  line-height: 40px; }
 
 .review-section .review-content-warp p {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 0;
-  line-height: 24px;
+  line-height: 32px;
   font-weight: 500;
   color: #444; }
 
@@ -596,14 +596,14 @@ footer {
     width: 100%; }
 
 .security-section .security-content-warp h3 {
-  font-size: 24px;
+  font-size: 32px;
   color: #00a6a6;
-  line-height: 28px; }
+  line-height: 40px; }
 
 .security-section .security-content-warp p {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 0;
-  line-height: 24px;
+  line-height: 32px;
   font-weight: 500;
   color: #444; }
 
@@ -638,6 +638,24 @@ footer {
   .section-2 .find-job-wrap .find-job-title h3 {
     font-size: 24px;
     margin-bottom: 12px; }
+  .apply-section .apply-content-warp h3 {
+    font-size: 24px;
+    line-height: 28px; }
+  .apply-section .apply-content-warp p {
+    font-size: 16px;
+    line-height: 24px; }
+  .review-section .review-content-warp h3 {
+    font-size: 24px;
+    line-height: 28px; }
+  .review-section .review-content-warp p {
+    font-size: 16px;
+    line-height: 24px; }
+  .security-section .security-content-warp h3 {
+    font-size: 24px;
+    line-height: 28px; }
+  .security-section .security-content-warp p {
+    font-size: 16px;
+    line-height: 24px; }
   .download-section .download-contnet-wrap .good-job-title {
     font-size: 24px; } }
 
@@ -747,7 +765,7 @@ body {
 .section-2 .find-job-wrap {
   position: relative; }
   .section-2 .find-job-wrap .find-job-title {
-    width: 160px;
+    width: 240px;
     position: absolute;
     top: 40px;
     left: 148px;
@@ -773,7 +791,7 @@ body {
 .section-2 .find-helper-wrap {
   position: relative; }
   .section-2 .find-helper-wrap .find-helper-title {
-    width: 160px;
+    width: 240px;
     position: absolute;
     top: 190px;
     left: 190px;
@@ -922,6 +940,7 @@ body {
                 transform: translateY(-5px); }
 
 .qr-section {
+  margin-top: -40px;
   position: relative;
   background-image: url(../../source/images/city-bg.jpg);
   background-position: center;
@@ -939,12 +958,12 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(4, 46, 103, 0.6); }
   .qr-section .iphone-logo {
     position: absolute;
     width: 269px;
-    height: 432px;
-    bottom: 0;
+    height: 476px;
+    bottom: -40px;
     left: 320px;
     z-index: 10; }
     .qr-section .iphone-logo img {
@@ -1066,11 +1085,13 @@ body {
       .section-2 .find-job-wrap .student img {
         width: 50%; }
     .section-2 .find-job-wrap .find-job-title {
+      width: 160px;
       text-align: center;
       left: 56px; }
     .section-2 .find-helper-wrap {
       top: 480px; }
       .section-2 .find-helper-wrap .find-helper-title {
+        width: 160px;
         top: 129px;
         left: 100px;
         text-align: center; }
