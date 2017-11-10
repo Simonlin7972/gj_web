@@ -560,9 +560,9 @@ footer {
     width: 100%; }
 
 .apply-section .apply-content-warp h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: #ff9519;
-  line-height: 40px; }
+  line-height: 44px; }
 
 .apply-section .apply-content-warp p {
   font-size: 24px;
@@ -578,7 +578,7 @@ footer {
     width: 100%; }
 
 .review-section .review-content-warp h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: #084887;
   line-height: 40px; }
 
@@ -596,9 +596,9 @@ footer {
     width: 100%; }
 
 .security-section .security-content-warp h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: #00a6a6;
-  line-height: 40px; }
+  line-height: 44px; }
 
 .security-section .security-content-warp p {
   font-size: 24px;
@@ -814,7 +814,7 @@ body {
       width: 100%; }
 
 .apply-section {
-  margin-top: 240px; }
+  margin-top: 160px; }
   .apply-section .apply-image-wrap {
     position: relative;
     z-index: 1; }
@@ -857,7 +857,7 @@ body {
       width: 319px;
       height: 147px;
       z-index: 3;
-      top: 119px;
+      top: -50px;
       left: 150px; }
       .review-section .review-image-wrap .text-rating img {
         width: 100%; }
@@ -866,8 +866,8 @@ body {
       width: 419px;
       height: 299px;
       z-index: 2;
-      top: 209px;
-      left: 76px; }
+      top: 46px;
+      left: 52px; }
       .review-section .review-image-wrap .people-phone img {
         width: 100%; }
     .review-section .review-image-wrap .yellow-shape-two {
@@ -875,9 +875,9 @@ body {
       width: 805px;
       height: 400px;
       z-index: 1;
-      bottom: -380px; }
+      bottom: -300px; }
       .review-section .review-image-wrap .yellow-shape-two img {
-        width: 95%; }
+        width: 80%; }
 
 .security-section {
   margin-top: 300px; }
@@ -1101,7 +1101,7 @@ body {
         text-align: center;
         left: 56px; }
     .section-2 .find-helper-wrap {
-      top: 480px; }
+      top: 320px; }
       .section-2 .find-helper-wrap .find-helper-title {
         width: 160px;
         top: 129px;
@@ -1118,15 +1118,15 @@ body {
         .section-2 .find-helper-wrap .boss-two img {
           width: 70%; }
   .apply-section {
-    margin-top: 120px;
+    margin-top: -80px;
     padding-top: 0; }
     .apply-section .apply-content-warp {
       text-align: center;
-      top: -90px; }
+      top: 240px; }
       .apply-section .apply-content-warp .apply-icon {
         margin: 0 auto; }
     .apply-section .apply-image-wrap {
-      bottom: 150px; }
+      top: 150px; }
       .apply-section .apply-image-wrap .timer {
         top: 400px;
         left: 182px; }
@@ -1150,7 +1150,7 @@ body {
       .review-section .review-content-warp .apply-icon {
         margin: 0 auto; }
     .review-section .review-image-wrap {
-      margin-top: -40px;
+      margin-top: -60px;
       margin-left: -30px; }
       .review-section .review-image-wrap .yellow-shape-two {
         top: 127px;
@@ -1168,25 +1168,27 @@ body {
         .review-section .review-image-wrap .text-rating img {
           width: 70%; }
   .security-section {
-    margin-top: 340px; }
-    .security-section .security-image-wrap .green-shpae-two {
-      height: 300px;
-      right: 0;
-      left: -37px;
-      bottom: -580px;
-      top: 41px; }
-      .security-section .security-image-wrap .green-shpae-two img {
-        width: 63%; }
-    .security-section .security-image-wrap .iphone-screen {
-      top: 78px;
-      left: 63px; }
-      .security-section .security-image-wrap .iphone-screen img {
-        width: 70%; }
-    .security-section .security-image-wrap .icon-secure {
-      top: 209px;
-      right: -102px; }
-      .security-section .security-image-wrap .icon-secure img {
-        width: 55%; }
+    margin-top: 240px; }
+    .security-section .security-image-wrap {
+      top: -30px; }
+      .security-section .security-image-wrap .green-shpae-two {
+        height: 300px;
+        right: 0;
+        left: -37px;
+        bottom: -580px;
+        top: 41px; }
+        .security-section .security-image-wrap .green-shpae-two img {
+          width: 63%; }
+      .security-section .security-image-wrap .iphone-screen {
+        top: 78px;
+        left: 63px; }
+        .security-section .security-image-wrap .iphone-screen img {
+          width: 70%; }
+      .security-section .security-image-wrap .icon-secure {
+        top: 209px;
+        right: -102px; }
+        .security-section .security-image-wrap .icon-secure img {
+          width: 55%; }
     .security-section .security-content-warp {
       text-align: center;
       margin: -200px; }
@@ -1374,7 +1376,7 @@ body {
     width: 106px; }
   #parallax-bg3 #bg3-8 {
     position: absolute;
-    top: 3500px;
+    top: 2900px;
     left: 1180px;
     width: 80px; }
 
