@@ -16,6 +16,8 @@ jQuery(document).ready(function($) {
     }
   });
 
+  
+
 
   //smooth scroll to top
   $back_to_top.on('click', function(event) {
@@ -24,51 +26,8 @@ jQuery(document).ready(function($) {
       scrollTop: 0,
     }, scroll_top_duration);
   });
-  });
 
-  // slider popup
-  $('#btn-know-more').click(function(event) {
-    event.preventDefault();
-    $('.full-bg').fadeToggle(200);
-  });
-
-  $('.btn-cancel').click(function(event) {
-    $('.full-bg').fadeToggle(200);
-  });
-
-
-  $('#btn-know-more-2').click(function(event) {
-    event.preventDefault();
-    $('.full-bg-2').fadeToggle(200);
-  });
-
-  $('.btn-cancel-2').click(function(event) {
-    $('.full-bg-2').fadeToggle(200);
-  });
-
-
-  // sliding-img-left
-  $('#dot-1').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3').removeClass('sliding-left-animation');
-  });
-  $('#dot-2').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3').removeClass('sliding-left-animation');
-  });
-  $('#dot-3').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2').removeClass('sliding-left-animation');
-  });
-
-  // sliding-img-right
-  $('#dot-4').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3').removeClass('sliding-left-animation-2');
-  });
-  $('#dot-5').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-2').removeClass('sliding').removeClass('sliding-3').removeClass('sliding-left-animation-2');
-  });
-  $('#dot-6').click(function(event) {
-    $('.slide-img-wrap').addClass('sliding-3').removeClass('sliding').removeClass('sliding-2').removeClass('sliding-left-animation-2');
-  });
-
+});
 
 
 
@@ -115,9 +74,11 @@ jQuery(document).ready(function($) {
 
 
 
+
+
+
 // faq page
 $(function() {
-
   $('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function() {
     $(this).addClass('qa_title_on');
   }, function() {
@@ -134,15 +95,4 @@ $(function() {
 
 $(function() {
   $("#tabs").tabs();
-});
-
-
-$(document).ready(function() {
-  // 產品特色往下
-  $('.scroll-down').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $(".businessman").offset().top = $('.gj-nav').height()
-    }, 1000);
-  });
 });

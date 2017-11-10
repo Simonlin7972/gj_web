@@ -1075,19 +1075,21 @@ body {
           width: 60%; }
   .section-2 {
     padding-top: 0; }
-    .section-2 .find-job-wrap .yellow-shape {
-      left: -55px; }
-      .section-2 .find-job-wrap .yellow-shape img {
-        width: 60%; }
-    .section-2 .find-job-wrap .student {
-      top: 116px;
-      left: 18px; }
-      .section-2 .find-job-wrap .student img {
-        width: 50%; }
-    .section-2 .find-job-wrap .find-job-title {
-      width: 160px;
-      text-align: center;
-      left: 56px; }
+    .section-2 .find-job-wrap {
+      margin-top: 130px; }
+      .section-2 .find-job-wrap .yellow-shape {
+        left: -55px; }
+        .section-2 .find-job-wrap .yellow-shape img {
+          width: 60%; }
+      .section-2 .find-job-wrap .student {
+        top: 116px;
+        left: 18px; }
+        .section-2 .find-job-wrap .student img {
+          width: 50%; }
+      .section-2 .find-job-wrap .find-job-title {
+        width: 160px;
+        text-align: center;
+        left: 56px; }
     .section-2 .find-helper-wrap {
       top: 480px; }
       .section-2 .find-helper-wrap .find-helper-title {
@@ -1106,7 +1108,7 @@ body {
         .section-2 .find-helper-wrap .boss-two img {
           width: 70%; }
   .apply-section {
-    margin-top: 0;
+    margin-top: 120px;
     padding-top: 0; }
     .apply-section .apply-content-warp {
       text-align: center;
@@ -1114,7 +1116,7 @@ body {
       .apply-section .apply-content-warp .apply-icon {
         margin: 0 auto; }
     .apply-section .apply-image-wrap {
-      bottom: 110px; }
+      bottom: 150px; }
       .apply-section .apply-image-wrap .timer {
         top: 400px;
         left: 182px; }
@@ -1138,7 +1140,7 @@ body {
       .review-section .review-content-warp .apply-icon {
         margin: 0 auto; }
     .review-section .review-image-wrap {
-      margin-top: 10px;
+      margin-top: -40px;
       margin-left: -30px; }
       .review-section .review-image-wrap .yellow-shape-two {
         top: 127px;

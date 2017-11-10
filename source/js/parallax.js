@@ -9,7 +9,7 @@ $(document).ready(function() {
 /* Scroll the background layers */
 function parallaxScroll(){
 	var scrolled = $(window).scrollTop();
-	$('#parallax-bg1').css('top',(800-(scrolled*.95))+'px');
+	$('#parallax-bg1').css('top',(600-(scrolled*.95))+'px');
 	$('#parallax-bg2').css('top',(600-(scrolled*.75))+'px');
 	$('#parallax-bg3').css('top',(0-(scrolled*.75))+'px');
 	$('#feature-00').css('top',(0-(scrolled*.15))+'px');
