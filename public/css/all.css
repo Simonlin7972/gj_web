@@ -65,8 +65,8 @@ a {
       .full-bg .slide-frame .slide-img-wrap img {
         width: 100%; }
     .full-bg .slide-frame .sliding-left-animation {
-      -webkit-animation: slide-left 4s ease both;
-              animation: slide-left 4s ease both; }
+      -webkit-animation: slide-left 6s ease both;
+              animation: slide-left 6s ease both; }
     .full-bg .slide-frame .sliding {
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
@@ -168,8 +168,8 @@ a {
       .full-bg-2 .slide-frame .slide-img-wrap img {
         width: 100%; }
     .full-bg-2 .slide-frame .sliding-left-animation-2 {
-      -webkit-animation: slide-left 4s ease both;
-              animation: slide-left 4s ease both; }
+      -webkit-animation: slide-left 6s ease both;
+              animation: slide-left 6s ease both; }
     .full-bg-2 .slide-frame .sliding {
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
