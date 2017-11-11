@@ -384,8 +384,17 @@ nav .active-menu {
     right: 16px; } }
 
 @media (max-width: 576px) {
-  .menu-wrap li {
-    text-align: center; } }
+  .gj-nav .menu-wrap .navbar-nav .nav-item {
+    text-align: center;
+    margin-right: 0; }
+    .gj-nav .menu-wrap .navbar-nav .nav-item .nav-link {
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 0; }
+    .gj-nav .menu-wrap .navbar-nav .nav-item .nav-link:first-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .gj-nav .menu-wrap .navbar-nav .nav-item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); } }
 
 footer {
   background-color: #041d35; }
@@ -1104,7 +1113,8 @@ body {
         text-align: center;
         left: 56px; }
     .section-2 .find-helper-wrap {
-      top: 320px; }
+      top: 280px;
+      z-index: 21; }
       .section-2 .find-helper-wrap .find-helper-title {
         width: 160px;
         top: 129px;
@@ -1225,7 +1235,8 @@ body {
       right: 0;
       left: 0;
       text-align: center;
-      height: 350px; }
+      height: 350px;
+      overflow: hidden; }
       .qr-section .iphone-logo img {
         width: 80%; }
     .qr-section .qr-img {

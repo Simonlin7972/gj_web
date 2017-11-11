@@ -69,6 +69,18 @@ nav
     top: 16px
     right: 16px
 @media (max-width: 576px)
-  .menu-wrap
-    li
-      text-align: center
+  .gj-nav
+    // padding-bottom: 0
+    .menu-wrap
+      .navbar-nav
+        .nav-item
+          text-align: center
+          margin-right: 0
+          .nav-link
+            padding-left: 0
+            padding-right: 0
+            border-radius: 0
+          .nav-link:first-child
+            border-top: 1px solid rgba(0,0,0,0.1)
+        .nav-item:last-child
+          border-bottom: 1px solid rgba(0,0,0,0.1)
