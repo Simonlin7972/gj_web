@@ -400,13 +400,13 @@ footer {
       margin-right: 16px;
       list-style: none; }
       footer ul li a {
-        font-size: 14px;
+        font-size: 15px;
         -webkit-transition: all .3s;
         -o-transition: all .3s;
         transition: all .3s;
-        color: rgba(255, 255, 255, 0.7); }
+        color: white; }
         footer ul li a:hover {
-          color: white; }
+          color: rgba(255, 255, 255, 0.7); }
   footer p {
     color: white;
     text-align: right;
@@ -940,19 +940,18 @@ body {
                 transform: translateY(-5px); }
 
 .qr-section {
-  margin-top: -40px;
   position: relative;
   background-image: url(../../source/images/city-bg.jpg);
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
-  height: 160px;
+  height: 200px;
   z-index: 1; }
   .qr-section:after {
     content: '';
     display: block;
     z-index: 3;
-    height: 160px;
+    height: 200px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -963,7 +962,7 @@ body {
     position: absolute;
     width: 269px;
     height: 476px;
-    bottom: -40px;
+    bottom: 0;
     left: 320px;
     z-index: 10; }
     .qr-section .iphone-logo img {
@@ -971,8 +970,8 @@ body {
   .qr-section .qr-img {
     position: absolute;
     z-index: 12;
-    top: 20px;
-    right: 370px;
+    top: 45px;
+    right: 360px;
     margin: 0 auto;
     height: 110px;
     width: 110px; }
@@ -1007,7 +1006,11 @@ body {
     .section-2 .find-helper-wrap {
       bottom: 150px; }
   .apply-section .apply-image-wrap {
-    right: 140px; } }
+    right: 140px; }
+  .security-section .security-image-wrap {
+    right: 80px; }
+  .download-section {
+    margin-top: 240px; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .main-section h1 {

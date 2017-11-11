@@ -275,19 +275,18 @@ body
         // opacity: .8
 
 .qr-section
-  margin-top: -40px
   position: relative
   background-image: url(../../source/images/city-bg.jpg)
-  background-position: center
+  background-position: bottom
   background-size: cover
   background-attachment: fixed
-  height: 160px
+  height: 200px
   z-index: 1
   &:after
     content: ''
     display: block
     z-index: 3
-    height: 160px
+    height: 200px
     width: 100%
     position: absolute
     top: 0
@@ -298,7 +297,7 @@ body
     position: absolute
     width: 269px
     height: 476px
-    bottom: -40px
+    bottom: 0
     left: 320px
     z-index: 10
     img
@@ -306,8 +305,8 @@ body
   .qr-img
     position: absolute
     z-index: 12
-    top: 20px
-    right: 370px
+    top: 45px
+    right: 360px
     margin: 0 auto
     height: 110px
     width: 110px
@@ -337,6 +336,13 @@ body
   .apply-section
     .apply-image-wrap
       right: 140px
+  .security-section
+    .security-image-wrap
+      right: 80px
+  .download-section
+    margin-top: 240px
+
+
 @media screen and (min-width: 768px) and (max-width: 992px)
   .main-section
     h1
