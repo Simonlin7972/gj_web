@@ -16,9 +16,6 @@ jQuery(document).ready(function($) {
     }
   });
 
-  
-
-
   //smooth scroll to top
   $back_to_top.on('click', function(event) {
     event.preventDefault();

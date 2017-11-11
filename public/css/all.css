@@ -371,8 +371,7 @@ a {
       color: white !important; }
 
 nav .active-menu {
-  background-color: #084887;
-  border-radius: 3px; }
+  background-color: #084887; }
   nav .active-menu a {
     color: white !important;
     cursor: default; }
@@ -1164,7 +1163,7 @@ body {
         margin: 0 auto; }
     .review-section .review-image-wrap {
       margin-top: -60px;
-      margin-left: -30px; }
+      margin-left: 0px; }
       .review-section .review-image-wrap .yellow-shape-two {
         top: 127px;
         left: -7px; }
@@ -1222,14 +1221,18 @@ body {
     .download-section .cta-wrap {
       padding-right: 0;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 24px; }
       .download-section .cta-wrap .cta-box {
-        width: 240px;
+        width: 200px;
         height: 72px;
         margin: 0 auto;
         margin-top: 24px; }
   .qr-section {
-    margin-top: 200px; }
+    height: 120px;
+    margin-top: 220px; }
+    .qr-section:after {
+      height: 120px; }
     .qr-section .iphone-logo {
       margin: 0 auto;
       right: 0;
