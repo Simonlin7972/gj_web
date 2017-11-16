@@ -382,6 +382,10 @@ nav .active-menu {
     top: 16px;
     right: 16px; } }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .gj-nav .navbar-nav .nav-item .nav-link {
+    padding-left: 16px; } }
+
 @media (max-width: 576px) {
   .gj-nav .menu-wrap .navbar-nav .nav-item {
     text-align: center;
@@ -722,8 +726,8 @@ body {
 .push-up-delay {
   -webkit-animation: fade-up .6s ease both;
           animation: fade-up .6s ease both;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s; }
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s; }
 
 .padding-board-160 {
   padding-top: 160px;
@@ -1075,30 +1079,53 @@ body {
   .download-section {
     margin-top: 240px; } }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .main-section h1 {
-    font-size: 60px;
-    text-align: left; }
-  .main-section .cta-wrap {
-    display: inline-block; }
-    .main-section .cta-wrap .cta-box {
-      margin-top: 24px; }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .arrow-indicator {
+    top: 900px; }
+  .main-section {
+    margin-top: 240px; }
+    .main-section .section-1-people .boss-man {
+      left: 0;
+      right: 120px;
+      margin: 0 auto; }
+    .main-section .section-1-people .boss-women {
+      left: 120px;
+      right: 0;
+      margin: 0 auto; }
+    .main-section .section-1-content {
+      text-align: center;
+      top: -360px; }
+      .main-section .section-1-content h1 {
+        font-size: 48px;
+        text-align: center; }
+      .main-section .section-1-content h2 {
+        font-size: 32px;
+        text-align: center; }
+    .main-section .cta-wrap {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .main-section .cta-wrap .cta-box {
+        display: inline-block;
+        margin-top: 24px;
+        margin-right: 8px;
+        margin-left: 8px; }
   .section-2 {
-    padding-top: 48px; }
+    padding-top: 48px;
+    margin-top: 72px; }
     .section-2 .find-helper-wrap {
       top: 600px; }
   .apply-section {
-    margin-top: 480px; }
-    .apply-section .apply-content-warp h3 {
-      color: white; }
-    .apply-section .apply-content-warp p {
-      background-color: white;
-      display: inline-block;
-      margin-bottom: 8px;
-      padding-left: 8px;
-      padding-right: 8px;
-      border-radius: 3px;
-      border: 1px solid rgba(0, 0, 0, 0.2); } }
+    margin-top: 800px; }
+    .apply-section .apply-content-warp {
+      text-align: center;
+      top: -200px; }
+      .apply-section .apply-content-warp p {
+        margin-bottom: 8px; }
+      .apply-section .apply-content-warp .apply-icon {
+        margin: 0 auto; }
+    .apply-section .apply-image-wrap .timer {
+      right: 160px; } }
 
 @media (max-width: 576px) {
   .main-section {
@@ -1300,6 +1327,10 @@ body {
     .qr-section .qr-img {
       display: none; } }
 
+#btn-know-more i, #btn-know-more-2 i {
+  -webkit-animation: more-btn-arrow .8s ease both infinite;
+          animation: more-btn-arrow .8s ease both infinite; }
+
 .btn-go-top {
   width: 48px;
   height: 48px;
@@ -1406,6 +1437,28 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
+@-webkit-keyframes more-btn-arrow {
+  0% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); } }
+
+@keyframes more-btn-arrow {
+  0% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); } }
+
 #parallax-bg3 {
   z-index: 70;
   position: fixed;
@@ -1469,6 +1522,10 @@ body {
   width: 1200px; }
   #parallax-bg1 #bg1-1 {
     position: absolute; }
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  #parallax-bg3 #bg3-1 {
+    display: none; } }
 
 @media (min-width: 992px) {
   #bg2-1 {
