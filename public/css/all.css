@@ -1147,7 +1147,26 @@ body {
       right: 0;
       margin: 0 auto; }
       .security-section .security-content-warp .apply-icon {
-        margin: 0 auto; } }
+        margin: 0 auto; }
+  .download-section {
+    margin-top: 200px; }
+    .download-section .cta-wrap {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .download-section .cta-wrap .cta-box {
+        display: inline-block;
+        margin-top: 24px;
+        margin-right: 8px;
+        margin-left: 8px; }
+  .qr-section {
+    margin-top: 280px; }
+    .qr-section .iphone-logo {
+      margin: 0 auto;
+      right: 0;
+      left: 0; }
+    .qr-section .qr-img {
+      display: none; } }
 
 @media (max-width: 576px) {
   .main-section {
