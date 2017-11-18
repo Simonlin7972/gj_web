@@ -737,91 +737,92 @@ body {
   padding-top: 48px;
   padding-bottom: 48px; }
 
-.main-section .section-1-people {
-  position: relative;
-  top: 0;
-  z-index: -1; }
-  .main-section .section-1-people .boss-man {
-    width: 202px;
-    height: 373px;
-    position: absolute;
-    top: 105px;
-    right: 90px;
-    z-index: 4;
-    -webkit-animation: fade-up .5s ease both;
-            animation: fade-up .5s ease both;
-    -webkit-animation-delay: .8s;
-            animation-delay: .8s; }
-    .main-section .section-1-people .boss-man img {
-      width: 100%; }
-  .main-section .section-1-people .boss-women {
-    width: 176px;
-    height: 323px;
-    position: absolute;
-    top: 171px;
-    right: -28px;
-    z-index: 3;
-    -webkit-animation: fade-up .5s ease both;
-            animation: fade-up .5s ease both;
-    -webkit-animation-delay: .6s;
-            animation-delay: .6s; }
-    .main-section .section-1-people .boss-women img {
-      width: 100%; }
-  .main-section .section-1-people .people {
-    width: 721px;
-    height: 521px;
-    position: absolute;
-    left: 130px;
-    top: 6px;
-    z-index: 2;
-    -webkit-animation: fade-up .5s ease both;
-            animation: fade-up .5s ease both;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s; }
-    .main-section .section-1-people .people img {
-      width: 90%; }
-  .main-section .section-1-people .bg-orange {
-    width: 751px;
-    height: 533px;
-    position: absolute;
+.main-section .container-custom-width {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .main-section .container-custom-width .section-1-people {
+    position: relative;
     top: 0;
-    z-index: 1;
-    -webkit-animation: fade-up 1s ease both;
-            animation: fade-up 1s ease both;
-    -webkit-animation-delay: .3s;
-            animation-delay: .3s; }
-    .main-section .section-1-people .bg-orange img {
-      width: 90%; }
-
-.main-section .section-1-content {
-  margin-top: 80px;
-  position: relative;
-  z-index: 5; }
-
-.main-section .cta-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-  .main-section .cta-wrap .cta-box {
-    width: 200px;
-    height: 60px;
-    margin-left: 16px;
-    margin-top: 48px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
-    .main-section .cta-wrap .cta-box img {
-      width: 100%;
-      -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-              box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-      border-radius: 28px; }
-    .main-section .cta-wrap .cta-box:hover {
-      -webkit-transform: translateY(-5px);
-          -ms-transform: translateY(-5px);
-              transform: translateY(-5px); }
+    z-index: -1; }
+    .main-section .container-custom-width .section-1-people .boss-man {
+      width: 202px;
+      height: 373px;
+      position: absolute;
+      top: 105px;
+      right: 90px;
+      z-index: 4;
+      -webkit-animation: fade-up .5s ease both;
+              animation: fade-up .5s ease both;
+      -webkit-animation-delay: .8s;
+              animation-delay: .8s; }
+      .main-section .container-custom-width .section-1-people .boss-man img {
+        width: 100%; }
+    .main-section .container-custom-width .section-1-people .boss-women {
+      width: 176px;
+      height: 323px;
+      position: absolute;
+      top: 171px;
+      right: -28px;
+      z-index: 3;
+      -webkit-animation: fade-up .5s ease both;
+              animation: fade-up .5s ease both;
+      -webkit-animation-delay: .6s;
+              animation-delay: .6s; }
+      .main-section .container-custom-width .section-1-people .boss-women img {
+        width: 100%; }
+    .main-section .container-custom-width .section-1-people .people {
+      width: 721px;
+      height: 521px;
+      position: absolute;
+      left: 130px;
+      top: 6px;
+      z-index: 2;
+      -webkit-animation: fade-up .5s ease both;
+              animation: fade-up .5s ease both;
+      -webkit-animation-delay: .5s;
+              animation-delay: .5s; }
+      .main-section .container-custom-width .section-1-people .people img {
+        width: 90%; }
+    .main-section .container-custom-width .section-1-people .bg-orange {
+      width: 751px;
+      height: 533px;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      -webkit-animation: fade-up 1s ease both;
+              animation: fade-up 1s ease both;
+      -webkit-animation-delay: .3s;
+              animation-delay: .3s; }
+      .main-section .container-custom-width .section-1-people .bg-orange img {
+        width: 90%; }
+  .main-section .container-custom-width .section-1-content {
+    margin-top: 80px;
+    position: relative;
+    z-index: 5; }
+  .main-section .container-custom-width .cta-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .main-section .container-custom-width .cta-wrap .cta-box {
+      width: 200px;
+      height: 60px;
+      margin-left: 16px;
+      margin-top: 48px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .main-section .container-custom-width .cta-wrap .cta-box img {
+        width: 100%;
+        -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 28px; }
+      .main-section .container-custom-width .cta-wrap .cta-box:hover {
+        -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+                transform: translateY(-5px); }
 
 .arrow-indicator {
   position: absolute;
@@ -1084,32 +1085,34 @@ body {
     top: 900px; }
   .main-section {
     margin-top: 240px; }
-    .main-section .section-1-people .boss-man {
-      left: 0;
-      right: 120px;
-      margin: 0 auto; }
-    .main-section .section-1-people .boss-women {
-      left: 120px;
-      right: 0;
-      margin: 0 auto; }
-    .main-section .section-1-content {
-      text-align: center;
-      top: -360px; }
-      .main-section .section-1-content h1 {
-        font-size: 48px;
-        text-align: center; }
-      .main-section .section-1-content h2 {
-        font-size: 32px;
-        text-align: center; }
-    .main-section .cta-wrap {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .main-section .cta-wrap .cta-box {
-        display: inline-block;
-        margin-top: 24px;
-        margin-right: 8px;
-        margin-left: 8px; }
+    .main-section .container-custom-width {
+      max-width: 900px; }
+      .main-section .container-custom-width .section-1-people .boss-man {
+        left: 0;
+        right: 120px;
+        margin: 0 auto; }
+      .main-section .container-custom-width .section-1-people .boss-women {
+        left: 120px;
+        right: 0;
+        margin: 0 auto; }
+      .main-section .container-custom-width .section-1-content {
+        text-align: center;
+        top: -360px; }
+        .main-section .container-custom-width .section-1-content h1 {
+          font-size: 48px;
+          text-align: center; }
+        .main-section .container-custom-width .section-1-content h2 {
+          font-size: 32px;
+          text-align: center; }
+      .main-section .container-custom-width .cta-wrap {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .main-section .container-custom-width .cta-wrap .cta-box {
+          display: inline-block;
+          margin-top: 24px;
+          margin-right: 8px;
+          margin-left: 8px; }
   .section-2 {
     padding-top: 48px;
     margin-top: 72px; }
@@ -1125,7 +1128,26 @@ body {
       .apply-section .apply-content-warp .apply-icon {
         margin: 0 auto; }
     .apply-section .apply-image-wrap .timer {
-      right: 160px; } }
+      right: 0; }
+  .review-section .review-content-warp {
+    text-align: center; }
+    .review-section .review-content-warp .apply-icon {
+      margin: 0 auto; }
+  .review-section .review-image-wrap {
+    top: -120px; }
+  .security-section {
+    margin-top: 500px; }
+    .security-section .security-image-wrap {
+      top: -130px; }
+    .security-section .security-content-warp {
+      position: absolute;
+      top: -300px;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+      .security-section .security-content-warp .apply-icon {
+        margin: 0 auto; } }
 
 @media (max-width: 576px) {
   .main-section {
