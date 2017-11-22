@@ -113,7 +113,8 @@ a {
         -webkit-transition: all .3s;
         -o-transition: all .3s;
         transition: all .3s;
-        cursor: pointer; }
+        cursor: pointer;
+        border: 1px solid transparent; }
         .full-bg .slide-frame .indicator-wrap .dot:hover {
           background-color: #084887; }
 
@@ -222,7 +223,8 @@ a {
         -webkit-transition: all .3s;
         -o-transition: all .3s;
         transition: all .3s;
-        cursor: pointer; }
+        cursor: pointer;
+        border: 1px solid transparent; }
         .full-bg-2 .slide-frame .indicator-wrap .dot:hover {
           background-color: #084887; }
 
@@ -287,6 +289,12 @@ a {
           width: 100%; }
       .slide-frame .slide-img-wrap .pop-img-lg {
         display: none !important; }
+    .slide-frame .indicator-wrap {
+      bottom: 16px !important; }
+      .slide-frame .indicator-wrap .dot {
+        width: 40px !important;
+        height: 12px !important;
+        margin: 0 8px !important; }
   @-webkit-keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
