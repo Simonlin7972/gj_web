@@ -1021,7 +1021,6 @@ body {
   background-image: url(../../source/images/city-bg.jpg);
   background-position: bottom;
   background-size: cover;
-  background-attachment: fixed;
   height: 200px;
   z-index: 1; }
   .qr-section:after {
