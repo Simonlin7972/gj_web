@@ -1,5 +1,4 @@
-.dot-selected
-  background-color: $primary-color !important
+
 
 .pop-img-sm
   display: none
@@ -89,7 +88,11 @@
         border: 1px solid transparent
         &:hover
           background-color: $primary-color
-
+      .dot-selected
+        background-color: $primary-color !important
+      #dot-1
+        animation: dot-1-indicator 6s linear both
+        animation-fill-mode: forwards
 
 // 找幫手part
 .full-bg-2
@@ -194,6 +197,16 @@
     transform: translateX(-1080px)
   100%
     transform: translateX(-2160px)
+@keyframes dot-1-indicator
+
+  0%
+    background-color: $orange
+  25%
+    background-color: $primary-color
+  50%
+    background-color: $orange
+  99%
+    background-color: $orange
 
 
 // popup RWD
