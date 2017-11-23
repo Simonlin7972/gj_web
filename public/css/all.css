@@ -119,8 +119,8 @@ a {
       .full-bg .slide-frame .indicator-wrap #dot-1 {
         -webkit-animation: dot-1-indicator 6s linear both;
                 animation: dot-1-indicator 6s linear both;
-        -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards; }
+        -webkit-animation-fill-mode: backwards;
+                animation-fill-mode: backwards; }
 
 .full-bg-2 {
   display: none;
@@ -269,6 +269,8 @@ a {
 @-webkit-keyframes dot-1-indicator {
   0% {
     background-color: #ff9519; }
+  1% {
+    background-color: #084887; }
   25% {
     background-color: #084887; }
   50% {
@@ -279,6 +281,8 @@ a {
 @keyframes dot-1-indicator {
   0% {
     background-color: #ff9519; }
+  1% {
+    background-color: #084887; }
   25% {
     background-color: #084887; }
   50% {
