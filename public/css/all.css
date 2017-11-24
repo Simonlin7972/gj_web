@@ -241,6 +241,8 @@ a {
         border: 1px solid transparent; }
         .full-bg-2 .slide-frame .indicator-wrap .dot:hover {
           background-color: #084887; }
+      .full-bg-2 .slide-frame .indicator-wrap .dot-selected {
+        background-color: #084887 !important; }
 
 @-webkit-keyframes slide-left {
   0% {
