@@ -807,12 +807,38 @@ body {
               animation-delay: .6s; }
       .main-section .container-custom-width .section-1-people .boss-women img {
         width: 100%; }
+    .main-section .container-custom-width .section-1-people .people-top {
+      width: 721px;
+      height: 521px;
+      position: absolute;
+      left: 80px;
+      top: -30px;
+      z-index: 1;
+      -webkit-animation: fade-up .5s ease both;
+              animation: fade-up .5s ease both;
+      -webkit-animation-delay: .5s;
+              animation-delay: .5s; }
+      .main-section .container-custom-width .section-1-people .people-top img {
+        width: 72%; }
+    .main-section .container-custom-width .section-1-people .people-top-mask {
+      width: 721px;
+      height: 521px;
+      position: absolute;
+      left: 80px;
+      top: -30px;
+      z-index: 2;
+      -webkit-animation: fade-in .5s ease both;
+              animation: fade-in .5s ease both;
+      -webkit-animation-delay: 1.2s;
+              animation-delay: 1.2s; }
+      .main-section .container-custom-width .section-1-people .people-top-mask img {
+        width: 72%; }
     .main-section .container-custom-width .section-1-people .people {
       width: 721px;
       height: 521px;
       position: absolute;
       left: 130px;
-      top: 6px;
+      top: 10px;
       z-index: 2;
       -webkit-animation: fade-up .5s ease both;
               animation: fade-up .5s ease both;
@@ -820,12 +846,25 @@ body {
               animation-delay: .5s; }
       .main-section .container-custom-width .section-1-people .people img {
         width: 90%; }
+    .main-section .container-custom-width .section-1-people .people-mask {
+      width: 721px;
+      height: 521px;
+      position: absolute;
+      left: 130px;
+      top: 10px;
+      z-index: 2;
+      -webkit-animation: fade-in .5s ease both;
+              animation: fade-in .5s ease both;
+      -webkit-animation-delay: 1.2s;
+              animation-delay: 1.2s; }
+      .main-section .container-custom-width .section-1-people .people-mask img {
+        width: 90%; }
     .main-section .container-custom-width .section-1-people .bg-orange {
       width: 751px;
       height: 533px;
       position: absolute;
       top: 0;
-      z-index: 1;
+      z-index: -1;
       -webkit-animation: fade-up 1s ease both;
               animation: fade-up 1s ease both;
       -webkit-animation-delay: .3s;
@@ -1101,6 +1140,18 @@ body {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @media screen and (min-width: 992px) {
   .main-section .section-1-people {

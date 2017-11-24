@@ -57,15 +57,48 @@ body
         animation-delay: .6s
         img
           width: 100%
+      .people-top
+        width: 721px
+        height: 521px
+        position: absolute
+        left: 80px
+        top: -30px
+        z-index: 1
+        animation: fade-up .5s ease both
+        animation-delay: .5s
+        img
+          width: 72%
+      .people-top-mask
+        width: 721px
+        height: 521px
+        position: absolute
+        left: 80px
+        top: -30px
+        z-index: 2
+        animation: fade-in .5s ease both
+        animation-delay: 1.2s
+        img
+          width: 72%
       .people
         width: 721px
         height: 521px
         position: absolute
         left: 130px
-        top: 6px
+        top: 10px
         z-index: 2
         animation: fade-up .5s ease both
         animation-delay: .5s
+        img
+          width: 90%
+      .people-mask
+        width: 721px
+        height: 521px
+        position: absolute
+        left: 130px
+        top: 10px
+        z-index: 2
+        animation: fade-in .5s ease both
+        animation-delay: 1.2s
         img
           width: 90%
       .bg-orange
@@ -73,7 +106,7 @@ body
         height: 533px
         position: absolute
         top: 0
-        z-index: 1
+        z-index: -1
         animation: fade-up 1s ease both
         animation-delay: .3s
         img
@@ -326,6 +359,12 @@ body
   100%
     opacity: 1
     transform: translateY(0)
+
+@keyframes fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 // RWD setting
 
