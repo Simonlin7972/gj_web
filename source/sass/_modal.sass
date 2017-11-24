@@ -88,17 +88,16 @@
         border: 1px solid transparent
         &:hover
           background-color: $primary-color
-      .dot-selected
-        background-color: $primary-color !important
-      #dot-1
+      .dot-1-indicator
         animation: dot-1-indicator 6s linear both
         animation-fill-mode: backwards
-      #dot-2
+      .dot-2-indicator
         animation: dot-2-indicator 6s linear both
-        animation-fill-mode: backwards
-      #dot-3
+      .dot-3-indicator
         animation: dot-3-indicator 6s linear both
-        animation-fill-mode: backwards
+      .dot-selected
+        background-color: $primary-color !important
+
 
 // 找幫手part
 .full-bg-2
@@ -200,6 +199,7 @@
     transform: translateX(0)
   50%
     transform: translateX(-1080px)
+    background-color: $primary-color
   75%
     transform: translateX(-1080px)
   100%
@@ -213,7 +213,7 @@
     background-color: $primary-color
   50%
     background-color: $orange
-  99%
+  100%
     background-color: $orange
 
 @keyframes dot-2-indicator
@@ -225,13 +225,11 @@
     background-color: $primary-color
   75%
     background-color: $primary-color
-  99%
+  100%
     background-color: $orange
 
 @keyframes dot-3-indicator
   0%
-    background-color: $primary-color
-  1%
     background-color: $orange
   25%
     background-color: $orange
@@ -239,7 +237,7 @@
     background-color: $orange
   75%
     background-color: $orange
-  99%
+  100%
     background-color: $primary-color
 
 

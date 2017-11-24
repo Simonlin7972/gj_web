@@ -18,7 +18,6 @@ jQuery(document).ready(function($) {
     $('.full-bg-2').fadeToggle(200);
   });
 
-
   // sliding-img-left
   $('#dot-1').click(function(event) {
     $('.slide-img-wrap').addClass('sliding').removeClass('sliding-2').removeClass('sliding-3').removeClass('sliding-left-animation');
@@ -44,20 +43,22 @@ jQuery(document).ready(function($) {
 
 // dot-selected effect
   $('#dot-1').click(function(event) {
-    $(this).addClass('dot-selected');
-    $('#dot-2').removeClass('dot-selected');
-    $('#dot-3').removeClass('dot-selected');
+    $(this).addClass('dot-selected').removeClass('dot-1-indicator');
+    $('#dot-2').removeClass('dot-selected').removeClass('dot-2-indicator');
+    $('#dot-3').removeClass('dot-selected').removeClass('dot-3-indicator');
   });
   $('#dot-2').click(function(event) {
-    $(this).addClass('dot-selected');
-    $('#dot-1').removeClass('dot-selected');
-    $('#dot-3').removeClass('dot-selected');
+    $(this).addClass('dot-selected').removeClass('dot-2-indicator');
+    $('#dot-1').removeClass('dot-selected').removeClass('dot-1-indicator');
+    $('#dot-3').removeClass('dot-selected').removeClass('dot-3-indicator');
   });
   $('#dot-3').click(function(event) {
-    $(this).addClass('dot-selected');
-    $('#dot-1').removeClass('dot-selected');
-    $('#dot-2').removeClass('dot-selected');
+    $(this).addClass('dot-selected').removeClass('dot-3-indicator');
+    $('#dot-1').removeClass('dot-selected').removeClass('dot-1-indicator');
+    $('#dot-2').removeClass('dot-selected').removeClass('dot-2-indicator');
   });
+
+
 
   $('#dot-4').click(function(event) {
     $(this).addClass('dot-selected');
@@ -74,6 +75,5 @@ jQuery(document).ready(function($) {
     $('#dot-4').removeClass('dot-selected');
     $('#dot-5').removeClass('dot-selected');
   });
-
 
 });
