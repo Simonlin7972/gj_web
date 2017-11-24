@@ -93,6 +93,12 @@
       #dot-1
         animation: dot-1-indicator 6s linear both
         animation-fill-mode: backwards
+      #dot-2
+        animation: dot-2-indicator 6s linear both
+        animation-fill-mode: backwards
+      #dot-3
+        animation: dot-3-indicator 6s linear both
+        animation-fill-mode: backwards
 
 // 找幫手part
 .full-bg-2
@@ -198,7 +204,6 @@
   100%
     transform: translateX(-2160px)
 @keyframes dot-1-indicator
-
   0%
     background-color: $orange
   1%
@@ -209,6 +214,32 @@
     background-color: $orange
   99%
     background-color: $orange
+
+@keyframes dot-2-indicator
+  0%
+    background-color: $orange
+  25%
+    background-color: $orange
+  50%
+    background-color: $primary-color
+  75%
+    background-color: $primary-color
+  99%
+    background-color: $orange
+
+@keyframes dot-3-indicator
+  0%
+    background-color: $primary-color
+  1%
+    background-color: $orange
+  25%
+    background-color: $orange
+  50%
+    background-color: $orange
+  75%
+    background-color: $orange
+  99%
+    background-color: $primary-color
 
 
 // popup RWD

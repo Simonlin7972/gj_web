@@ -43,7 +43,7 @@ body
         right: 90px
         z-index: 4
         animation: fade-up .5s ease both
-        animation-delay: .8s
+        animation-delay: .6s
         img
           width: 100%
       .boss-women
@@ -54,7 +54,7 @@ body
         right: -28px
         z-index: 3
         animation: fade-up .5s ease both
-        animation-delay: .6s
+        animation-delay: .7s
         img
           width: 100%
       .people-top
@@ -64,8 +64,8 @@ body
         left: 80px
         top: -30px
         z-index: 1
-        animation: fade-up .5s ease both
-        animation-delay: .5s
+        animation: fade-down .5s ease both
+        animation-delay: .4s
         img
           width: 72%
       .people-top-mask
@@ -75,8 +75,8 @@ body
         left: 80px
         top: -30px
         z-index: 2
-        animation: fade-in .5s ease both
-        animation-delay: 1.2s
+        animation: fade-in .4s ease both
+        animation-delay: .9s
         img
           width: 72%
       .people
@@ -97,8 +97,8 @@ body
         left: 130px
         top: 10px
         z-index: 2
-        animation: fade-in .5s ease both
-        animation-delay: 1.2s
+        animation: fade-in .4s ease both
+        animation-delay: .9s
         img
           width: 90%
       .bg-orange
@@ -349,13 +349,20 @@ body
     width: 110px
     img
       width: 100%
-// animation
 
+// animation
+@keyframes fade-down
+  0%
+    opacity: 0
+    transform: translateY(-25px)
+  100%
+    opacity: 1
+    transform: translateY(0)
 
 @keyframes fade-up
   0%
     opacity: 0
-    transform: translateY(15px)
+    transform: translateY(20px)
   100%
     opacity: 1
     transform: translateY(0)
@@ -512,6 +519,24 @@ body
           margin: 0 auto
           img
             width: 75%
+        .people-top-mask
+          position: absolute
+          left: 3px
+          top: -3px
+          img
+            width: 55%
+        .people-top
+          position: absolute
+          left: 3px
+          top: -3px
+          img
+            width: 55%
+        .people-mask
+          position: absolute
+          left: 3px
+          top: -3px
+          img
+            width: 65%
         .people
           position: absolute
           left: 3px
