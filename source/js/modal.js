@@ -61,19 +61,19 @@ jQuery(document).ready(function($) {
 
 
   $('#dot-4').click(function(event) {
-    $(this).addClass('dot-selected');
-    $('#dot-5').removeClass('dot-selected');
-    $('#dot-6').removeClass('dot-selected');
+    $(this).addClass('dot-selected').removeClass('dot-1-indicator');
+    $('#dot-5').removeClass('dot-selected').removeClass('dot-2-indicator');
+    $('#dot-6').removeClass('dot-selected').removeClass('dot-3-indicator');
   });
   $('#dot-5').click(function(event) {
-    $(this).addClass('dot-selected');
-    $('#dot-4').removeClass('dot-selected');
-    $('#dot-6').removeClass('dot-selected');
+    $(this).addClass('dot-selected').removeClass('dot-2-indicator');
+    $('#dot-4').removeClass('dot-selected').removeClass('dot-1-indicator');
+    $('#dot-6').removeClass('dot-selected').removeClass('dot-3-indicator');
   });
   $('#dot-6').click(function(event) {
-    $(this).addClass('dot-selected');
-    $('#dot-4').removeClass('dot-selected');
-    $('#dot-5').removeClass('dot-selected');
+    $(this).addClass('dot-selected').removeClass('dot-3-indicator');
+    $('#dot-4').removeClass('dot-selected').removeClass('dot-1-indicator');
+    $('#dot-5').removeClass('dot-selected').removeClass('dot-2-indicator');
   });
 
 });
