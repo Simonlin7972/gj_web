@@ -58,27 +58,27 @@ body
         img
           width: 100%
       .people-top
-        width: 721px
-        height: 521px
+        width: 449px
+        height: 415px
         position: absolute
-        left: 80px
-        top: -30px
+        left: 116px
+        top: -43px
         z-index: 1
         animation: fade-down .5s ease both
         animation-delay: .4s
         img
-          width: 72%
+          width: 100%
       .people-top-mask
-        width: 721px
-        height: 521px
+        width: 449px
+        height: 415px
         position: absolute
-        left: 80px
-        top: -30px
+        left: 116px
+        top: -43px
         z-index: 2
         animation: fade-in .4s ease both
         animation-delay: .9s
         img
-          width: 72%
+          width: 100%
       .people
         width: 721px
         height: 521px
@@ -391,6 +391,12 @@ body
       right: 80px
   .download-section
     margin-top: 240px
+@media screen and (min-width: 576px) and (max-width: 769px)
+  .main-section
+    .container-custom-width
+      .section-1-people
+        .people-top,.people-top-mask
+          left: 72px !important
 
 @media screen and (min-width: 576px) and (max-width: 992px)
   .arrow-indicator
@@ -408,6 +414,15 @@ body
           left: 120px
           right: 0
           margin: 0 auto
+        .people-top,.people-top-mask
+          left: 125px
+          // margin: 0 auto
+          right: 0
+        .bg-orange
+          left: 0
+          right: 0
+          // margin: 0 auto
+
       .section-1-content
         text-align: center
         top: -360px
@@ -505,32 +520,36 @@ body
       .section-1-people
         top: 100px
         .boss-man
-          top: 40px
-          right: 0
+          top: 90px
+          right: -30px
           left: -60px
           margin: 0 auto
           img
-            width: 75%
+            width: 65%
         .boss-women
           position: absolute
-          top: 100px
-          right: -150px
+          top: 119px
+          right: -162px
           left: 0
           margin: 0 auto
           img
-            width: 75%
+            width: 65%
         .people-top-mask
           position: absolute
-          left: 3px
-          top: -3px
+          left: -12px
+          top: -13px
+          right: 0
+          // margin: 0 auto
           img
-            width: 55%
+            width: 65%
         .people-top
           position: absolute
-          left: 3px
-          top: -3px
+          left: -12px
+          top: -13px
+          right: 0
+          // margin: 0 auto
           img
-            width: 55%
+            width: 65%
         .people-mask
           position: absolute
           left: 8px
@@ -702,3 +721,24 @@ body
         width: 80%
     .qr-img
       display: none
+
+@media (max-width: 376px)
+  .main-section
+    .container-custom-width
+      .section-1-people
+        .people,.people-mask
+          left: -26px
+        .people-top,.people-top-mask
+          left: -32px
+        .bg-orange
+          left: -120px
+@media (max-width: 321px)
+  .main-section
+    .container-custom-width
+      .section-1-people
+        .people,.people-mask
+          left: -50px
+        .people-top,.people-top-mask
+          left: -48px
+        .bg-orange
+          left: -139px
