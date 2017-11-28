@@ -359,7 +359,7 @@ a {
   100% {
     background-color: #084887; } }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .slide-frame {
     width: 290px;
     height: 420px !important; }
@@ -1259,6 +1259,22 @@ body {
 @media screen and (min-width: 576px) and (max-width: 769px) {
   .main-section .container-custom-width .section-1-people .people-top, .main-section .container-custom-width .section-1-people .people-top-mask {
     left: 72px !important; } }
+
+@media screen and (min-width: 880px) and (max-width: 990px) {
+  .main-section .container-custom-width .section-1-people .boss-man {
+    right: 180px; } }
+
+@media screen and (min-width: 577px) and (max-width: 640px) {
+  .main-section .container-custom-width .section-1-people .boss-man {
+    right: -100px !important; }
+  .main-section .container-custom-width .section-1-people .boss-women {
+    right: -280px !important; } }
+
+@media screen and (min-width: 641px) and (max-width: 720px) {
+  .main-section .container-custom-width .section-1-people .boss-man {
+    right: -20px !important; }
+  .main-section .container-custom-width .section-1-people .boss-women {
+    right: -150px !important; } }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .arrow-indicator {
